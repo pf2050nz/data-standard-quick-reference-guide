@@ -1,0 +1,39 @@
+$theme-colors: (
+    "primary" : #98c13d,
+);
+
+h1, h2 {
+    color: var(--primary);
+}
+
+.toggleDisplay {
+    display: none;
+}
+
+.toggleDisplay.in {
+    display: table-cell;
+}
+
+/* As SVG does not provide a default visual style for links, it's considered best practice to add some */
+/*@namespace svg url(http://www.w3.org/2000/svg);*/
+/* Necessary to select only SVG <a> elements, and not also HTML’s. See warning below */
+
+svg|a:link, svg|a:visited {
+    cursor: pointer;
+}
+
+svg|a text,
+text svg|a {
+    fill: blue; /* Even for text, SVG uses fill over color */
+    text-decoration: underline;
+}
+
+svg|a:hover, svg|a:active {
+    outline: dotted 1px blue;
+}
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../bootstrap/scss/bootstrap";
+
