@@ -5,13 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link rel="shortcut icon" href=".\images\favicon.ico">
         <link rel="stylesheet" href="scss\custom.css">
 
         <title>New Zealand Predator Free 2050 Data Standard Quick Reference Guide</title>
     </head>
     <body data-spy="scroll" data-target="#sidebar-nav">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">PCDS</a>
+            <a class="navbar-brand" href="#" title="Predator Control Data Standard">PCDS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,12 +32,11 @@
                 <div class="col-sm-2 order-sm-2">
                     <nav class="nav nav-pills flex-column sticky-top" id="sidebar-nav">
                         <a class="nav-link" href="#definitions">Definitions</a>
-                        <a class="nav-link" href="#date_recorded">date_recorded</a>
                         <a class="nav-link" href="#device">device</a>
                         <a class="nav-link" href="#device_status">device_status</a>
+                        <a class="nav-link" href="#person">person</a>
                         <a class="nav-link" href="#pf2050_data_standard">pf2050_data_standard</a>
                         <a class="nav-link" href="#report">report</a>
-                        <a class="nav-link" href="#reported_by">reported_by</a>
                         <a class="nav-link" href="#species">species</a>
                         <a class="nav-link" href="#substance">substance</a>
                         <a class="nav-link" href="#substance_status">substance_status</a>
@@ -61,53 +61,6 @@
                     <hr/>
                     <h1 id="definitions">Definitions</h1>
 
-                    <h2 id="date_recorded">date_recorded</h2>
-                    <div>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#date_recorded:date">date</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#date_recorded:date_start">date_start</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#date_recorded:date_end">date_end</a>
-                    </div>
-
-                    <p class="invisible"></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-primary"><th colspan="2">date_recorded <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Collection of properties that describe the when the activity occurred. Choice of properties can describe a single point in time or a date range.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Use either <code>date</code> or <code>date_start</code> and <code>date_end</code> not both.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td>XML<br/><code>&lt;date_recorded&gt;&lt;date&gt;2019-06-05T14:10:15Z&lt;/date&gt;&lt;/date_recorded&gt;</code> or<br/> <code>&lt;date_recorded&gt;&lt;date_start&gt;2020-02-01T00:00:00Z&lt;/date_start&gt;&lt;date_end&gt;2020-02-29T23:59:790Z&lt;/date_end&gt;&lt;/date_recorded&gt;</code><br/>JSON<br/><code>{ "date_recorded" : { "date" : "2019-06-05T14:10:15Z" } }</code> or<br/><code>{ "date_recorded" : { "date_start" : "2020-02-01T00:00:00Z", "date_end" : "2020-02-29T23:59:790Z" } }</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="date_recorded:date"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">date <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The date the report data was captured.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>2019-06-05T14:10:15Z</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="date_recorded:date_start"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">date_start <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The earliest date the report data covers/spans.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>2020-02-01T00:00:00Z</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="date_recorded:date_end"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">date_end <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The latest date the report data covers/spans.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to use a date that conforms to ISO 8601:2004(E).</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>2020-02-29T23:59:59Z</code></td></tr>
-                        </tbody>
-                    </table>
-
                     <h2 id="device">device</h2>
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_uuid">device_uuid</a>
@@ -131,7 +84,7 @@
                     <p class="invisible"><a id="device:device_uuid"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">device_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">device_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the <code>device</code>.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>The publishing <code>system</code> is responsible for generating the UUID. Once published, the <code>device_uuid</code> should not change.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>352E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
@@ -183,7 +136,6 @@
                     <h2 id="device_status">device_status</h2>
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device_status:status_type">status_type</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#device_status:status_term">status_term</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device_status:status_value">status_value</a>
                     </div>
 
@@ -192,12 +144,12 @@
                         <tbody>
                             <tr class="table-primary"><th colspan="2">device_status <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the state of a <code>device</code> use to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Each status is represented as a <code>status_type</code>, <code>status_term</code> or a <code>status_type</code>, <code>status_value</code> pair.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Each status is represented as a <code>status_type</code>, <code>status_value</code> pair.</td></tr>
                             <tr>
                                 <td style="width: 10%">Examples</td>
                                 <td>
-                                    XML<br/><code>&lt;device_status&gt;&lt;status_type&gt;Arrival&lt;/status_type&gt;&lt;status_term&gt;Set&lt;/status_term&gt;&lt;/device_status&gt;</code><br/><code>&lt;device_status&gt;&lt;status_type&gt;Trigger Count&lt;/status_type&gt;&lt;status_value&gt;12&lt;/status_value&gt;&lt;/device_status&gt;</code><br/>
-                                    JSON<br/><code>{ "device_status" : [ { "status_type" : "Arrival", "status_term" : "Set" }, { "status_type" : "Trigger Count", "status_value" : "12" } ] }</code>
+                                    XML<br/><code>&lt;device_status&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_type&gt;Arrival&lt;/status_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_value&gt;Set&lt;/status_value&gt;<br/>&lt;/device_status&gt;</code><br/><code>&lt;device_status&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_type&gt;Trigger Count&lt;/status_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_value&gt;12&lt;/status_value&gt;<br/>&lt;/device_status&gt;</code><br/>
+                                    JSON<br/><code>{ "device_status" : [ { "status_type" : "Arrival", "status_value" : "Set" }, { "status_type" : "Trigger Count", "status_value" : "12" } ] }</code>
                                 </td>
                             </tr>
                         </tbody>
@@ -213,30 +165,56 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="device_status:status_term"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">status_term <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The term associated with the device status_type.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>status_term</code> values are stored and published via cloud-based API.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>Set</code>, <code>Not Set</code>, <code>Triggered</code></td></tr>
-                        </tbody>
-                    </table>
-
                     <p class="invisible"><a id="device_status:status_value"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">status_value <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The value associated with the device status_type.</td></tr>
+                                <tr><td style="width: 10%">Definition</td><td>The value associated with the device status_type. Can be string or integer.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend string values are stored and published via cloud-based API.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>Set</code>, <code>Not Set</code>, <code>Triggered</code>, <code>1</code>, <code>12</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="person">person</h2>
+                    <div>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#person:person_uuid">person_uuid</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#person:name">name</a>
+                    </div>
+
+                    <p class="invisible"><a id=""></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">person <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the person captured the record-entry.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>12</code></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="person:person_uuid"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">person_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the person that captured the record-entry.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Once published, the value should not change for the given person.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="person:name"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Name of the person that captured the record-entry.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>John Doe</code></td></tr>
                         </tbody>
                     </table>
 
                     <h2 id="pf2050_data_standard">pf2050_data_standard</h2>
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:system">system</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:reported_by">reported_by</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:person">person</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:report">report</a>
                     </div>
 
@@ -250,11 +228,11 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="pf2050_data_standard:reported_by"></a></p>
+                    <p class="invisible"><a id="pf2050_data_standard:person"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">reported_by <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td><a href="#reported_by"># Go to definition.</a></td></tr>
+                            <tr class="table-primary"><th colspan="2">person <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#person"># Go to definition.</a></td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td></td></tr>
                         </tbody>
@@ -263,7 +241,7 @@
                     <p class="invisible"><a id="pf2050_data_standard:report"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">report <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-primary"><th colspan="2">report <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td><a href="#report"># Go to definition.</a></td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td></td></tr>
@@ -274,11 +252,12 @@
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:report_uuid">report_uuid</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:type">type</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_recorded">date_recorded</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_start">date_start</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_end">date_end</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:location">location</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:device">device</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:species">species</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:reported_by">reported_by</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:person_uuid">person_uuid</a>
                     </div>
 
                     <p class="invisible"><a id=""></a></p>
@@ -301,7 +280,7 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="report:type"></a>/p>
+                    <p class="invisible"><a id="report:type"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">type <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
@@ -311,20 +290,30 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="report:date_recorded"></a>/p>
+                    <p class="invisible"><a id="report:date_start"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">date_recorded <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td><a href="#date_recorded"># Go to Defintion</a></td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code></code></td></tr>
+                            <tr class="table-secondary"><th colspan="2">date_start <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>The earliest date the report data covers/spans.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to use a date format that conforms to ISO 8601. All dates should be presented in the UTC timezone.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>2020-02-01T00:00:00Z</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="report:date_end"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">date_end <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>The latest date the report data covers/spans. For single point in time events or activities, <code>date_end</code> should match <code>date_start</code>.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to use a date format that conforms to ISO 8601. All dates should be presented in the UTC timezone.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>2020-02-29T23:59:59Z</code></td></tr>
                         </tbody>
                     </table>
 
                     <p class="invisible"><a id="report:location"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">location <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">location <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Describes the location where the activity or event took place.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Well-known text (WKT) representation of geometry. Refer <a href="https://www.ogc.org/standards/sfa" target="_blank">https://www.ogc.org/standards/sfa.</a> All coordinates assumed WGS84 unless specified otherwise. It is recognized that in many circumstances sharing location information is sensitive. In these cases, care should be taken to obfuscate the actual location by reducing accuracy or using alternative, safe location data.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>POINT(-175.123456 35.123456)</code>, <code>POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</code></td></tr>
@@ -351,104 +340,13 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="report:reported_by"></a></p>
+                    <p class="invisible"><a id="report:person_uuid"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">reported_by <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td><a href="#reported_by"># Go to definition.</a></td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code></code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <h2 id="reported_by">reported_by</h2>
-                    <div>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:reporter_uuid">reporter_uuid</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:name">name</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:project_name">project_name</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:website_url">website_url</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:contact_name">contact_name</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:contact_phone">contact_phone</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#reported_by:contact_email">contact_email</a>
-                    </div>
-
-                    <p class="invisible"><a id=""></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-primary"><th colspan="2">reported_by <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the person or subsystem that published the dataset, file or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:reporter_uuid"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">reporter_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the person or subsystem that published the dataset, file or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Once published, the value should not change for the given person or subsystem.</td></tr>
+                            <tr class="table-primary"><th colspan="2">person_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the person that captured the record-entry.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td><a href="#person">Refer person definition for more details.</a></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:name"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Name of the person or subsystem that published the dataset, file, or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>John Doe</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:project_name"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">project_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Name of the project asoociated with the dataset, file, or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>Predator Free Waiheke</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:website_url"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">website_url <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Website URL of the project associated with the dataset, file, or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>www.pf2050.co.nz</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:contact_name"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">contact_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Contact name of the person or subsystem associated with the dataset, file, or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>John Smith</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:contact_phone"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">contact_phone <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Contact phone of the person or subsystem associated with the dataset, file, or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to present the phone number in E.164 format. Refer <a href="https://en.wikipedia.org/wiki/E.164" target="_blank">https://en.wikipedia.org/wiki/E.164</a></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>+64123456790</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="reported_by:contact_email"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">contact_email <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Contact email of the person or subsystem associated with the dataset, file, or record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>john.doe@gmail.com</code></td></tr>
                         </tbody>
                     </table>
 
@@ -486,7 +384,7 @@
                     <p class="invisible"><a id="species:common_name"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">common_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">common_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Common name of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Recommend <code>common_name</code> data is stored and published via cloud-based API and data sourced from the <a href="http://www.nzor.org.nz/" target="_blank">New Zealand Organism Register.</a> Examples listed are for demonstration and discussion purposes only.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Rat</code>, <code>Norway Rat</code>, <code>Ship Rat</code>, <code>Possum</code>, <code>Mustelid</code>, <code>Ferret</code></td></tr>
@@ -584,7 +482,7 @@
                     <p class="invisible"><a id="substance:substance_name"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">substance_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">substance_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Name of substance used to catch or detect predators.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Recommend <code>substance_name</code> data is stored and published via cloud-based API.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Chicken Egg</code>, <code>Peanut Butter</code>, <code>Ditrac</code>, <code>Brodifacoum</code>, <code>Bromadiolone</code>, <code>Diphacinone</code>, <code>Pindone</code></td></tr>
@@ -604,7 +502,6 @@
                     <h2 id="substance_status">substance_status</h2>
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#substance_status:status_type">status_type</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#substance_status:status_term">status_term</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#substance_status:status_value">status_value</a>
                     </div>
 
@@ -613,12 +510,12 @@
                         <tbody>
                             <tr class="table-primary"><th colspan="2">substance_status <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the state of a <code>substance</code> used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Each status is represented as a <code>status_type</code>, <code>status_term</code> or a <code>status_type</code>, <code>status_value</code> pair.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Each status is represented as a <code>status_type</code>, <code>status_value</code> pair.</td></tr>
                             <tr>
                                 <td style="width: 10%">Examples</td>
                                 <td>
-                                    XML<br/><code>&lt;substance_status&gt;&lt;status_type&gt;Arrival&lt;/status_type&gt;&lt;status_term&gt;Gone&lt;/status_term&gt;&lt;/substance_status&gt;</code><br/><code>&lt;substance_status&gt;&lt;status_type&gt;Grams Added&lt;/status_type&gt;&lt;status_value&gt;28&lt;/status_value&gt;&lt;/substance_status&gt;</code><br/>
-                                    JSON<br/><code>{ "substance_status" : [ { "status_type" : "Arrival", "status_term" : "Gone" }, { "status_type" : "Grams Added", "status_value" : "28" } ] }</code>
+                                    XML<br/><code>&lt;substance_status&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_type&gt;Arrival&lt;/status_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_value&gt;Gone&lt;/status_value&gt;<br/>&lt;/substance_status&gt;</code><br/><code>&lt;substance_status&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_type&gt;Grams Added&lt;/status_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status_value&gt;28&lt;/status_value&gt;<br/>&lt;/substance_status&gt;</code><br/>
+                                    JSON<br/><code>{ "substance_status" : [ { "status_type" : "Arrival", "status_value" : "Gone" }, { "status_type" : "Grams Added", "status_value" : "28" } ] }</code>
                                 </td>
                             </tr>
                         </tbody>
@@ -634,23 +531,13 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="substance_status:status_term"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">status_term <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The term associated with the substance status_type.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>status_term</code> values are stored and published via cloud-based API.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>Gone</code>, <code>Bad</code>, <code>Intact</code>, <code>Partial</code>, <code>Replaced</code>, <code>Refreshed</code></td></tr>
-                        </tbody>
-                    </table>
-
                     <p class="invisible"><a id="substance_status:status_value"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">status_value <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The value associated with the substance status_type.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>12</code></td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>The value associated with the substance status_type. Can be string or integer.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend string values are stored and published via cloud-based API.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>Gone</code>, <code>Bad</code>, <code>Intact</code>, <code>Partial</code>, <code>Replaced</code>, <code>Refreshed</code>, <code>1</code>, <code>12</code></td></tr>
                         </tbody>
                     </table>
 
@@ -659,6 +546,11 @@
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#system:system_uuid">system_uuid</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#system:name">name</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#system:data_standard_version">data_standard_version</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#system:project_name">project_name</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#system:website_url">website_url</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#system:contact_name">contact_name</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#system:contact_phone">contact_phone</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#system:contact_email">contact_email</a>
                     </div>
 
                     <p class="invisible"><a id=""></a></p>
@@ -684,7 +576,7 @@
                     <p class="invisible"><a id="system:name"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Name of the person or subsystem that has published the dataset.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Examples included for demonstration and discussion purposes only.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Walk the Line</code>, <code>Trap.NZ</code>, <code>CatchIT</code>, <code>EcoTrack</code></td></tr>
@@ -698,6 +590,56 @@
                             <tr><td style="width: 10%">Definition</td><td>Version of the data standard.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Indicates to the consuming system what version of the standard the dataset adheres to.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>0.5</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="system:project_name"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">project_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Name of the project asoociated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>Predator Free Waiheke</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="system:website_url"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">website_url <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Website URL of the project associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>www.pf2050.co.nz</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="system:contact_name"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">contact_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Contact name of the person or subsystem associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>John Smith</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="system:contact_phone"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">contact_phone <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Contact phone of the person or subsystem associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to present the phone number in E.164 format. Refer <a href="https://en.wikipedia.org/wiki/E.164" target="_blank">https://en.wikipedia.org/wiki/E.164</a></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>+64123456790</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="system:contact_email"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">contact_email <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Contact email of the person or subsystem associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>john.doe@gmail.com</code></td></tr>
                         </tbody>
                     </table>
 
@@ -746,30 +688,14 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:data_standard_version">data_standard_version</a></td>
-                            <td class="ex-1 toggleDisplay in">0.5</td>
-                            <td class="ex-2 toggleDisplay">0.5</td>
-                            <td class="ex-3 toggleDisplay">0.5</td>
-                            <td class="ex-4 toggleDisplay">0.5</td>
-                            <td class="ex-5 toggleDisplay">0.5</td>
+                            <td class="ex-1 toggleDisplay in">0.6</td>
+                            <td class="ex-2 toggleDisplay">0.6</td>
+                            <td class="ex-3 toggleDisplay">0.6</td>
+                            <td class="ex-4 toggleDisplay">0.6</td>
+                            <td class="ex-5 toggleDisplay">0.6</td>
                         </tr>
                         <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:reporter_uuid">reporter_uuid</a></td>
-                            <td class="ex-1 toggleDisplay in">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-2 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-3 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-4 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-5 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:name">name</a></td>
-                            <td class="ex-1 toggleDisplay in">Forest & Bird Central Lakes Branch</td>
-                            <td class="ex-2 toggleDisplay">Forest & Bird Central Lakes Branch</td>
-                            <td class="ex-3 toggleDisplay">Forest & Bird Central Lakes Branch</td>
-                            <td class="ex-4 toggleDisplay">Forest & Bird Central Lakes Branch</td>
-                            <td class="ex-5 toggleDisplay">Forest & Bird Central Lakes Branch</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:project_name">project_name</a></td>
+                            <td><a href="#system">system.</a><a href="#system:project_name">project_name</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -777,7 +703,7 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:website_url">website_url</a></td>
+                            <td><a href="#system">system.</a><a href="#system:website_url">website_url</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -785,7 +711,7 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:contact_name">contact_name</a></td>
+                            <td><a href="#system">system.</a><a href="#system:contact_name">contact_name</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -793,7 +719,7 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:contact_phone">contact_phone</a></td>
+                            <td><a href="#system">system.</a><a href="#system:contact_phone">contact_phone</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -801,11 +727,27 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#reported_by">reported_by.</a><a href="#reported_by:contact_email">contact_email</a></td>
+                            <td><a href="#system">system.</a><a href="#system:contact_email">contact_email</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
                             <td class="ex-4 toggleDisplay">&nbsp;</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#person">person.</a><a href="#person:person_uuid">person_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-4 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#person">person.</a><a href="#person:name">name</a></td>
+                            <td class="ex-1 toggleDisplay in">Geoff</td>
+                            <td class="ex-2 toggleDisplay">Geoff</td>
+                            <td class="ex-3 toggleDisplay">Geoff</td>
+                            <td class="ex-4 toggleDisplay">Geoff</td>
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
@@ -825,27 +767,19 @@
                             <td class="ex-5 toggleDisplay">Catch</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#date_recorded">date_recorded.</a> <a href="#date_recorded:date">date</a></td>
+                            <td><a href="#report">report.</a> <a href="#date_start">date_start.</a> <a href="#date_start">date_start</a></td>
                             <td class="ex-1 toggleDisplay in">2019-06-05T14:10:15Z</td>
                             <td class="ex-2 toggleDisplay">2019-06-05T14:10:15Z</td>
                             <td class="ex-3 toggleDisplay">2019-06-05T14:10:15Z</td>
                             <td class="ex-4 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#date_recorded">date_recorded.</a> <a href="#date_recorded:date_start">date_start</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
                             <td class="ex-5 toggleDisplay">2020-02-01T00:00:00Z</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#date_recorded">date_recorded.</a> <a href="#date_recorded:date_end">date_end</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
+                            <td><a href="#report">report.</a> <a href="#date_end">date_end.</a> <a href="#date_end">date_end</a></td>
+                            <td class="ex-1 toggleDisplay in">2019-06-05T14:10:15Z</td>
+                            <td class="ex-2 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-3 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-4 toggleDisplay">2019-06-05T14:10:15Z</td>
                             <td class="ex-5 toggleDisplay">2020-02-29T23:59:59Z</td>
                         </tr>
                         <tr>
@@ -889,17 +823,9 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device_status">device_status.</a> <a href="#device_status:status_term">status_term</a></td>
+                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device_status">device_status.</a> <a href="#device_status:status_value">status_value</a></td>
                             <td class="ex-1 toggleDisplay in">Triggered</td>
                             <td class="ex-2 toggleDisplay">Set</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device_status">device_status.</a> <a href="#device_status:status_value">status_value</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
                             <td class="ex-4 toggleDisplay">&nbsp;</td>
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
@@ -937,17 +863,9 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance_status">substance_status.</a> <a href="#substance_status:status_term">status_term</a></td>
+                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance_status">substance_status.</a> <a href="#substance_status:status_value">status_value</a></td>
                             <td class="ex-1 toggleDisplay in">Gone</td>
                             <td class="ex-2 toggleDisplay">Replaced</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance_status">substance_status.</a> <a href="#substance_status:status_value">status_value</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">28</td>
                             <td class="ex-4 toggleDisplay">28</td>
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
@@ -1009,59 +927,11 @@
                             <td class="ex-5 toggleDisplay">True</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:reporter_uuid">reporter_uuid</a></td>
+                            <td><a href="#report">report.</a> <a href="#person_uuid">person_uuid</a></td>
                             <td class="ex-1 toggleDisplay in">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-2 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-3 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-4 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:name">name</a></td>
-                            <td class="ex-1 toggleDisplay in">Geoff</td>
-                            <td class="ex-2 toggleDisplay">Geoff</td>
-                            <td class="ex-3 toggleDisplay">Geoff</td>
-                            <td class="ex-4 toggleDisplay">Geoff</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:project_name">project_name</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:website_url">website_url</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:contact_name">contact_name</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:contact_phone">contact_phone</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#reported_by">reported_by.</a> <a href="#reported_by:contact_email">contact_email</a></td>
-                            <td class="ex-1 toggleDisplay in">&nbsp;</td>
-                            <td class="ex-2 toggleDisplay">&nbsp;</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                     </table>

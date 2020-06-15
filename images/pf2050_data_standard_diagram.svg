@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="1049" height="2194" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="989" height="1726" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <rect x="390" y="25" width="86" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
 <text x="433" y="36" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">system_uuid</text>
 <line x1="392" y1="27" x2="400" y2="27" style="stroke:rgb(0,0,0);stroke-width:1"/>
@@ -8,8 +8,8 @@
 <line x1="392" y1="31" x2="398" y2="31" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="392" y1="33" x2="398" y2="33" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="390" y="77" width="50" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="415" y="88" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">name</text>
+<rect x="390" y="77" width="91" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="435.5" y="88" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">system_name</text>
 <line x1="392" y1="79" x2="400" y2="79" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="392" y1="81" x2="398" y2="81" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="392" y1="83" x2="398" y2="83" style="stroke:rgb(0,0,0);stroke-width:1"/>
@@ -22,96 +22,98 @@
 <line x1="392" y1="135" x2="398" y2="135" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="392" y1="137" x2="398" y2="137" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
+<rect x="390" y="181" width="90" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="435" y="192" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">project_name</text>
+<line x1="392" y1="183" x2="400" y2="183" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="185" x2="398" y2="185" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="187" x2="398" y2="187" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="189" x2="398" y2="189" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="390" y="233" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="430" y="244" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">website_url</text>
+<line x1="392" y1="235" x2="400" y2="235" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="237" x2="398" y2="237" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="239" x2="398" y2="239" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="241" x2="398" y2="241" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="390" y="285" width="92" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="436" y="296" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_name</text>
+<line x1="392" y1="287" x2="400" y2="287" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="289" x2="398" y2="289" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="291" x2="398" y2="291" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="293" x2="398" y2="293" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="390" y="337" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="438" y="348" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_phone</text>
+<line x1="392" y1="339" x2="400" y2="339" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="341" x2="398" y2="341" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="343" x2="398" y2="343" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="345" x2="398" y2="345" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="390" y="389" width="92" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="436" y="400" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_email</text>
+<line x1="392" y1="391" x2="400" y2="391" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="393" x2="398" y2="393" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="395" x2="398" y2="395" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="392" y1="397" x2="398" y2="397" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
 <line x1="380" y1="36" x2="390" y2="36" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="380" y1="88" x2="390" y2="88" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="380" y1="140" x2="390" y2="140" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="380" y1="36" x2="380" y2="140" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="370" y1="88" x2="380" y2="88" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M336 78 L359 78 L365 84 L365 92 L359 98 L336 98 L330 92 L330 84 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="333" y1="88" x2="362" y2="88" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="342" cy="88" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="347" cy="88" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="352" cy="88" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="360" y="83" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="362" y1="88" x2="368" y2="88" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="380" y1="192" x2="390" y2="192" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="380" y1="244" x2="390" y2="244" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="380" y1="296" x2="390" y2="296" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="380" y1="348" x2="390" y2="348" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="380" y1="400" x2="390" y2="400" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="380" y1="36" x2="380" y2="400" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="370" y1="218" x2="380" y2="218" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M336 208 L359 208 L365 214 L365 222 L359 228 L336 228 L330 222 L330 214 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="333" y1="218" x2="362" y2="218" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="342" cy="218" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="347" cy="218" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="352" cy="218" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="360" y="213" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="362" y1="218" x2="368" y2="218" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="310" y1="88" x2="330" y2="88" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="242" y="77" width="63" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="273.5" y="88" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">system</text>
-<rect x="300" y="83" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="302" y1="88" x2="308" y2="88" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="310" y1="218" x2="330" y2="218" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="242" y="207" width="63" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="273.5" y="218" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">system</text>
+<rect x="300" y="213" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="302" y1="218" x2="308" y2="218" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="414" y="181" width="90" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="459" y="192" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">reporter_uuid</text>
-<line x1="416" y1="183" x2="424" y2="183" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="185" x2="422" y2="185" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="187" x2="422" y2="187" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="189" x2="422" y2="189" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="389" y="441" width="85" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="431.5" y="452" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">person_uuid</text>
+<line x1="391" y1="443" x2="399" y2="443" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="391" y1="445" x2="397" y2="445" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="391" y1="447" x2="397" y2="447" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="391" y1="449" x2="397" y2="449" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="414" y="233" width="50" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="439" y="244" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">name</text>
-<line x1="416" y1="235" x2="424" y2="235" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="237" x2="422" y2="237" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="239" x2="422" y2="239" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="241" x2="422" y2="241" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="389" y="493" width="90" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="434" y="504" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">person_name</text>
+<line x1="391" y1="495" x2="399" y2="495" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="391" y1="497" x2="397" y2="497" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="391" y1="499" x2="397" y2="499" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="391" y1="501" x2="397" y2="501" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="414" y="285" width="90" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="459" y="296" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">project_name</text>
-<line x1="416" y1="287" x2="424" y2="287" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="289" x2="422" y2="289" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="291" x2="422" y2="291" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="293" x2="422" y2="293" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="379" y1="452" x2="389" y2="452" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="379" y1="504" x2="389" y2="504" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="379" y1="452" x2="379" y2="504" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="369" y1="478" x2="379" y2="478" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M335 468 L358 468 L364 474 L364 482 L358 488 L335 488 L329 482 L329 474 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="332" y1="478" x2="361" y2="478" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="341" cy="478" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="346" cy="478" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="351" cy="478" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="359" y="473" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="361" y1="478" x2="367" y2="478" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="414" y="337" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="454" y="348" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">website_url</text>
-<line x1="416" y1="339" x2="424" y2="339" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="341" x2="422" y2="341" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="343" x2="422" y2="343" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="345" x2="422" y2="345" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="414" y="389" width="92" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="460" y="400" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_name</text>
-<line x1="416" y1="391" x2="424" y2="391" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="393" x2="422" y2="393" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="395" x2="422" y2="395" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="397" x2="422" y2="397" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="414" y="441" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="462" y="452" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_phone</text>
-<line x1="416" y1="443" x2="424" y2="443" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="445" x2="422" y2="445" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="447" x2="422" y2="447" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="449" x2="422" y2="449" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="414" y="493" width="92" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="460" y="504" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_email</text>
-<line x1="416" y1="495" x2="424" y2="495" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="497" x2="422" y2="497" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="499" x2="422" y2="499" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="416" y1="501" x2="422" y2="501" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="404" y1="192" x2="414" y2="192" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="244" x2="414" y2="244" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="296" x2="414" y2="296" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="348" x2="414" y2="348" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="400" x2="414" y2="400" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="452" x2="414" y2="452" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="504" x2="414" y2="504" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="404" y1="192" x2="404" y2="504" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="394" y1="348" x2="404" y2="348" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M360 338 L383 338 L389 344 L389 352 L383 358 L360 358 L354 352 L354 344 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="357" y1="348" x2="386" y2="348" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="366" cy="348" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="371" cy="348" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="376" cy="348" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="384" y="343" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="386" y1="348" x2="392" y2="348" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="334" y1="348" x2="354" y2="348" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="242" y="337" width="87" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="285.5" y="348" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">reported_by</text>
-<rect x="324" y="343" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="326" y1="348" x2="332" y2="348" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="309" y1="478" x2="329" y2="478" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="245" y="470" width="62" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="242" y="467" width="62" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="273" y="478" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">person</text>
+<text x="299" y="499" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="299" y="473" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="301" y1="478" x2="307" y2="478" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
 <rect x="385" y="545" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
 <text x="425" y="556" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">report_uuid</text>
@@ -120,466 +122,312 @@
 <line x1="387" y1="551" x2="393" y2="551" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="387" y1="553" x2="393" y2="553" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="385" y="597" width="44" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="407" y="608" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">type</text>
+<rect x="385" y="597" width="79" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="424.5" y="608" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">report_type</text>
 <line x1="387" y1="599" x2="395" y2="599" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="387" y1="601" x2="393" y2="601" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="387" y1="603" x2="393" y2="603" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="387" y1="605" x2="393" y2="605" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="569" y="649" width="44" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="591" y="660" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">date</text>
-<line x1="571" y1="651" x2="579" y2="651" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="571" y1="653" x2="577" y2="653" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="571" y1="655" x2="577" y2="655" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="571" y1="657" x2="577" y2="657" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="385" y="649" width="72" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="421" y="660" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">date_start</text>
+<line x1="387" y1="651" x2="395" y2="651" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="653" x2="393" y2="653" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="655" x2="393" y2="655" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="657" x2="393" y2="657" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="629" y="701" width="72" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="665" y="712" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">date_start</text>
-<line x1="631" y1="703" x2="639" y2="703" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="631" y1="705" x2="637" y2="705" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="631" y1="707" x2="637" y2="707" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="631" y1="709" x2="637" y2="709" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="385" y="701" width="68" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="419" y="712" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">date_end</text>
+<line x1="387" y1="703" x2="395" y2="703" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="705" x2="393" y2="705" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="707" x2="393" y2="707" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="709" x2="393" y2="709" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="629" y="753" width="68" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="663" y="764" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">date_end</text>
-<line x1="631" y1="755" x2="639" y2="755" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="631" y1="757" x2="637" y2="757" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="631" y1="759" x2="637" y2="759" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="631" y1="761" x2="637" y2="761" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="385" y="753" width="62" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="416" y="764" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">location</text>
+<line x1="387" y1="755" x2="395" y2="755" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="757" x2="393" y2="757" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="759" x2="393" y2="759" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="761" x2="393" y2="761" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="619" y1="712" x2="629" y2="712" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="619" y1="764" x2="629" y2="764" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="619" y1="712" x2="619" y2="764" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="609" y1="738" x2="619" y2="738" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M575 728 L598 728 L604 734 L604 742 L598 748 L575 748 L569 742 L569 734 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="572" y1="738" x2="601" y2="738" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="581" cy="738" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="586" cy="738" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="591" cy="738" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="599" y="733" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="601" y1="738" x2="607" y2="738" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="559" y1="660" x2="569" y2="660" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="559" y1="738" x2="569" y2="738" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="559" y1="660" x2="559" y2="738" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="549" y1="712" x2="559" y2="712" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M515 702 L538 702 L544 708 L544 716 L538 722 L515 722 L509 716 L509 708 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="514" y1="712" x2="518" y2="712" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="518" y1="712" x2="522" y2="708" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="530" y1="708" x2="534" y2="708" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="530" y1="712" x2="538" y2="712" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="530" y1="716" x2="534" y2="716" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="534" y1="708" x2="534" y2="716" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="526" cy="708" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="526" cy="712" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="526" cy="716" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="539" y="707" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="541" y1="712" x2="547" y2="712" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="489" y1="712" x2="509" y2="712" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="385" y="701" width="99" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="434.5" y="712" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">date_recorded</text>
-<rect x="479" y="707" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="481" y1="712" x2="487" y2="712" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="385" y="805" width="62" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="416" y="816" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">location</text>
-<line x1="387" y1="807" x2="395" y2="807" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="387" y1="809" x2="393" y2="809" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="387" y1="811" x2="393" y2="811" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="387" y1="813" x2="393" y2="813" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="530" y="805" width="82" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="571" y="816" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_uuid</text>
+<line x1="532" y1="807" x2="540" y2="807" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="532" y1="809" x2="538" y2="809" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="532" y1="811" x2="538" y2="811" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="532" y1="813" x2="538" y2="813" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
 <rect x="530" y="857" width="82" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="571" y="868" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_uuid</text>
+<text x="571" y="868" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_type</text>
 <line x1="532" y1="859" x2="540" y2="859" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="532" y1="861" x2="538" y2="861" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="532" y1="863" x2="538" y2="863" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="532" y1="865" x2="538" y2="865" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="530" y="909" width="82" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="571" y="920" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_type</text>
+<rect x="530" y="909" width="91" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="575.5" y="920" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_model</text>
 <line x1="532" y1="911" x2="540" y2="911" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="532" y1="913" x2="538" y2="913" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="532" y1="915" x2="538" y2="915" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="532" y1="917" x2="538" y2="917" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="530" y="961" width="91" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="575.5" y="972" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_model</text>
-<line x1="532" y1="963" x2="540" y2="963" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="532" y1="965" x2="538" y2="965" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="532" y1="967" x2="538" y2="967" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="532" y1="969" x2="538" y2="969" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="711" y="961" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="751" y="972" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_type</text>
+<line x1="713" y1="963" x2="721" y2="963" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="713" y1="965" x2="719" y2="965" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="713" y1="967" x2="719" y2="967" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="713" y1="969" x2="719" y2="969" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="711" y="1013" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="751" y="1024" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_type</text>
+<rect x="711" y="1013" width="85" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="753.5" y="1024" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_value</text>
 <line x1="713" y1="1015" x2="721" y2="1015" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="713" y1="1017" x2="719" y2="1017" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="713" y1="1019" x2="719" y2="1019" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="713" y1="1021" x2="719" y2="1021" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="771" y="1065" width="81" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="811.5" y="1076" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_term</text>
-<line x1="773" y1="1067" x2="781" y2="1067" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="773" y1="1069" x2="779" y2="1069" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="773" y1="1071" x2="779" y2="1071" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="773" y1="1073" x2="779" y2="1073" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="771" y="1117" width="85" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="813.5" y="1128" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_value</text>
-<line x1="773" y1="1119" x2="781" y2="1119" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="773" y1="1121" x2="779" y2="1121" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="773" y1="1123" x2="779" y2="1123" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="773" y1="1125" x2="779" y2="1125" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="761" y1="1076" x2="771" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="761" y1="1128" x2="771" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="761" y1="1076" x2="761" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="751" y1="1102" x2="761" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M717 1092 L740 1092 L746 1098 L746 1106 L740 1112 L717 1112 L711 1106 L711 1098 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="716" y1="1102" x2="720" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="720" y1="1102" x2="724" y2="1098" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="732" y1="1098" x2="736" y2="1098" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="732" y1="1102" x2="740" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="732" y1="1106" x2="736" y2="1106" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="736" y1="1098" x2="736" y2="1106" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="728" cy="1098" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="728" cy="1102" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="728" cy="1106" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="741" y="1097" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="743" y1="1102" x2="749" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
+<line x1="701" y1="972" x2="711" y2="972" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="701" y1="1024" x2="711" y2="1024" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="701" y1="1102" x2="711" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="701" y1="1024" x2="701" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="691" y1="1076" x2="701" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M657 1066 L680 1066 L686 1072 L686 1080 L680 1086 L657 1086 L651 1080 L651 1072 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="654" y1="1076" x2="683" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="663" cy="1076" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="668" cy="1076" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="673" cy="1076" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="681" y="1071" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="683" y1="1076" x2="689" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="701" y1="972" x2="701" y2="1024" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="691" y1="998" x2="701" y2="998" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M657 988 L680 988 L686 994 L686 1002 L680 1008 L657 1008 L651 1002 L651 994 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="654" y1="998" x2="683" y2="998" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="663" cy="998" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="668" cy="998" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="673" cy="998" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="681" y="993" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="683" y1="998" x2="689" y2="998" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="631" y1="1076" x2="651" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="533" y="1068" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<rect x="530" y="1065" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="578" y="1076" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_status</text>
-<text x="621" y="1097" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
-<rect x="621" y="1071" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="623" y1="1076" x2="629" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="631" y1="998" x2="651" y2="998" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="533" y="990" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="530" y="987" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="578" y="998" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device_status</text>
+<text x="621" y="1019" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="621" y="993" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="623" y1="998" x2="629" y2="998" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="694" y="1169" width="101" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="744.5" y="1180" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_type</text>
+<rect x="694" y="1065" width="101" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="744.5" y="1076" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_type</text>
+<line x1="696" y1="1067" x2="704" y2="1067" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="696" y1="1069" x2="702" y2="1069" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="696" y1="1071" x2="702" y2="1071" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="696" y1="1073" x2="702" y2="1073" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="694" y="1117" width="89" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="738.5" y="1128" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_id</text>
+<line x1="696" y1="1119" x2="704" y2="1119" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="696" y1="1121" x2="702" y2="1121" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="696" y1="1123" x2="702" y2="1123" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="696" y1="1125" x2="702" y2="1125" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="694" y="1169" width="106" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="747" y="1180" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_name</text>
 <line x1="696" y1="1171" x2="704" y2="1171" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="696" y1="1173" x2="702" y2="1173" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="696" y1="1175" x2="702" y2="1175" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="696" y1="1177" x2="702" y2="1177" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="694" y="1221" width="89" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="738.5" y="1232" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_id</text>
-<line x1="696" y1="1223" x2="704" y2="1223" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="696" y1="1225" x2="702" y2="1225" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="696" y1="1227" x2="702" y2="1227" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="696" y1="1229" x2="702" y2="1229" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="894" y="1221" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="934" y="1232" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_type</text>
+<line x1="896" y1="1223" x2="904" y2="1223" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="896" y1="1225" x2="902" y2="1225" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="896" y1="1227" x2="902" y2="1227" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="896" y1="1229" x2="902" y2="1229" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="694" y="1273" width="106" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="747" y="1284" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_name</text>
-<line x1="696" y1="1275" x2="704" y2="1275" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="696" y1="1277" x2="702" y2="1277" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="696" y1="1279" x2="702" y2="1279" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="696" y1="1281" x2="702" y2="1281" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="894" y="1273" width="85" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="936.5" y="1284" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_value</text>
+<line x1="896" y1="1275" x2="904" y2="1275" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="896" y1="1277" x2="902" y2="1277" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="896" y1="1279" x2="902" y2="1279" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="896" y1="1281" x2="902" y2="1281" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="894" y="1325" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="934" y="1336" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_type</text>
-<line x1="896" y1="1327" x2="904" y2="1327" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="896" y1="1329" x2="902" y2="1329" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="896" y1="1331" x2="902" y2="1331" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="896" y1="1333" x2="902" y2="1333" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="884" y1="1232" x2="894" y2="1232" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="884" y1="1284" x2="894" y2="1284" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="884" y1="1232" x2="884" y2="1284" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="874" y1="1258" x2="884" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M840 1248 L863 1248 L869 1254 L869 1262 L863 1268 L840 1268 L834 1262 L834 1254 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="837" y1="1258" x2="866" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="846" cy="1258" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="851" cy="1258" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="856" cy="1258" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="864" y="1253" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="866" y1="1258" x2="872" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="954" y="1377" width="81" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="994.5" y="1388" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_term</text>
-<line x1="956" y1="1379" x2="964" y2="1379" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="956" y1="1381" x2="962" y2="1381" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="956" y1="1383" x2="962" y2="1383" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="956" y1="1385" x2="962" y2="1385" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="814" y1="1258" x2="834" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="697" y="1250" width="115" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="694" y="1247" width="115" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="751.5" y="1258" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_status</text>
+<text x="804" y="1279" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="804" y="1253" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="806" y1="1258" x2="812" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="954" y="1429" width="85" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="996.5" y="1440" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">status_value</text>
-<line x1="956" y1="1431" x2="964" y2="1431" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="956" y1="1433" x2="962" y2="1433" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="956" y1="1435" x2="962" y2="1435" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="956" y1="1437" x2="962" y2="1437" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="944" y1="1388" x2="954" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="944" y1="1440" x2="954" y2="1440" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="944" y1="1388" x2="944" y2="1440" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="934" y1="1414" x2="944" y2="1414" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M900 1404 L923 1404 L929 1410 L929 1418 L923 1424 L900 1424 L894 1418 L894 1410 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="899" y1="1414" x2="903" y2="1414" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="903" y1="1414" x2="907" y2="1410" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="915" y1="1410" x2="919" y2="1410" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="915" y1="1414" x2="923" y2="1414" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="915" y1="1418" x2="919" y2="1418" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="919" y1="1410" x2="919" y2="1418" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="911" cy="1410" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="911" cy="1414" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="911" cy="1418" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="924" y="1409" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="926" y1="1414" x2="932" y2="1414" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="884" y1="1336" x2="894" y2="1336" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="884" y1="1414" x2="894" y2="1414" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="884" y1="1336" x2="884" y2="1414" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="874" y1="1388" x2="884" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M840 1378 L863 1378 L869 1384 L869 1392 L863 1398 L840 1398 L834 1392 L834 1384 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="837" y1="1388" x2="866" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="846" cy="1388" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="851" cy="1388" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="856" cy="1388" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="864" y="1383" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="866" y1="1388" x2="872" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="814" y1="1388" x2="834" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="697" y="1380" width="115" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<rect x="694" y="1377" width="115" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="751.5" y="1388" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance_status</text>
-<text x="804" y="1409" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
-<rect x="804" y="1383" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="806" y1="1388" x2="812" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
+<line x1="684" y1="1076" x2="694" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="684" y1="1128" x2="694" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="684" y1="1180" x2="694" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="684" y1="1232" x2="694" y2="1232" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="684" y1="1284" x2="694" y2="1284" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="684" y1="1388" x2="694" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="684" y1="1180" x2="684" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="674" y1="1310" x2="684" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M640 1300 L663 1300 L669 1306 L669 1314 L663 1320 L640 1320 L634 1314 L634 1306 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="637" y1="1310" x2="666" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="646" cy="1310" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="651" cy="1310" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="656" cy="1310" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="664" y="1305" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="666" y1="1310" x2="672" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="684" y1="1258" x2="694" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="684" y1="1076" x2="684" y2="1258" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="674" y1="1180" x2="684" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M640 1170 L663 1170 L669 1176 L669 1184 L663 1190 L640 1190 L634 1184 L634 1176 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="637" y1="1180" x2="666" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="646" cy="1180" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="651" cy="1180" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="656" cy="1180" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="664" y="1175" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="666" y1="1180" x2="672" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="614" y1="1310" x2="634" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="533" y="1302" width="79" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<rect x="530" y="1299" width="79" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="569.5" y="1310" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance</text>
-<text x="604" y="1331" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
-<rect x="604" y="1305" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="606" y1="1310" x2="612" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="614" y1="1180" x2="634" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="533" y="1172" width="79" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="530" y="1169" width="79" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="569.5" y="1180" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">substance</text>
+<text x="604" y="1201" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="604" y="1175" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="606" y1="1180" x2="612" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
+<line x1="520" y1="816" x2="530" y2="816" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="520" y1="868" x2="530" y2="868" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="520" y1="920" x2="530" y2="920" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="520" y1="972" x2="530" y2="972" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="520" y1="1076" x2="530" y2="1076" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="520" y1="1310" x2="530" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="520" y1="868" x2="520" y2="1310" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="510" y1="1154" x2="520" y2="1154" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M476 1144 L499 1144 L505 1150 L505 1158 L499 1164 L476 1164 L470 1158 L470 1150 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="473" y1="1154" x2="502" y2="1154" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="482" cy="1154" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="487" cy="1154" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="492" cy="1154" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="500" y="1149" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="502" y1="1154" x2="508" y2="1154" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="520" y1="998" x2="530" y2="998" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="520" y1="1180" x2="530" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="520" y1="816" x2="520" y2="1180" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="510" y1="1050" x2="520" y2="1050" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M476 1040 L499 1040 L505 1046 L505 1054 L499 1060 L476 1060 L470 1054 L470 1046 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="473" y1="1050" x2="502" y2="1050" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="482" cy="1050" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="487" cy="1050" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="492" cy="1050" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="500" y="1045" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="502" y1="1050" x2="508" y2="1050" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="450" y1="1154" x2="470" y2="1154" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="388" y="1146" width="60" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<rect x="385" y="1143" width="60" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="415" y="1154" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device</text>
-<text x="440" y="1175" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
-<rect x="440" y="1149" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="442" y1="1154" x2="448" y2="1154" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="450" y1="1050" x2="470" y2="1050" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="388" y="1042" width="60" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="385" y="1039" width="60" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="415" y="1050" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">device</text>
+<text x="440" y="1071" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="440" y="1045" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="442" y1="1050" x2="448" y2="1050" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="536" y="1481" width="76" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="574" y="1492" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">species_id</text>
+<rect x="536" y="1325" width="76" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="574" y="1336" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">species_id</text>
+<line x1="538" y1="1327" x2="546" y2="1327" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1329" x2="544" y2="1329" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1331" x2="544" y2="1331" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1333" x2="544" y2="1333" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="536" y="1377" width="98" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="585" y="1388" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">common_name</text>
+<line x1="538" y1="1379" x2="546" y2="1379" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1381" x2="544" y2="1381" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1383" x2="544" y2="1383" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1385" x2="544" y2="1385" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="536" y="1429" width="100" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="586" y="1440" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">scientific_name</text>
+<line x1="538" y1="1431" x2="546" y2="1431" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1433" x2="544" y2="1433" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1435" x2="544" y2="1435" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="538" y1="1437" x2="544" y2="1437" style="stroke:rgb(0,0,0);stroke-width:1"/>
+
+<rect x="536" y="1481" width="41" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="556.5" y="1492" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">age</text>
 <line x1="538" y1="1483" x2="546" y2="1483" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1485" x2="544" y2="1485" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1487" x2="544" y2="1487" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1489" x2="544" y2="1489" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="536" y="1533" width="98" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="585" y="1544" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">common_name</text>
+<rect x="536" y="1533" width="40" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="556" y="1544" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">sex</text>
 <line x1="538" y1="1535" x2="546" y2="1535" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1537" x2="544" y2="1537" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1539" x2="544" y2="1539" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1541" x2="544" y2="1541" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="536" y="1585" width="100" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="586" y="1596" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">scientific_name</text>
+<rect x="536" y="1585" width="51" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="561.5" y="1596" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">count</text>
 <line x1="538" y1="1587" x2="546" y2="1587" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1589" x2="544" y2="1589" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1591" x2="544" y2="1591" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1593" x2="544" y2="1593" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="536" y="1637" width="41" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="556.5" y="1648" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">age</text>
+<rect x="536" y="1637" width="51" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="561.5" y="1648" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">target</text>
 <line x1="538" y1="1639" x2="546" y2="1639" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1641" x2="544" y2="1641" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1643" x2="544" y2="1643" style="stroke:rgb(0,0,0);stroke-width:1"/>
 <line x1="538" y1="1645" x2="544" y2="1645" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="536" y="1689" width="40" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="556" y="1700" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">sex</text>
-<line x1="538" y1="1691" x2="546" y2="1691" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1693" x2="544" y2="1693" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1695" x2="544" y2="1695" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1697" x2="544" y2="1697" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="536" y="1741" width="51" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="561.5" y="1752" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">count</text>
-<line x1="538" y1="1743" x2="546" y2="1743" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1745" x2="544" y2="1745" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1747" x2="544" y2="1747" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1749" x2="544" y2="1749" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="536" y="1793" width="51" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="561.5" y="1804" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">target</text>
-<line x1="538" y1="1795" x2="546" y2="1795" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1797" x2="544" y2="1797" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1799" x2="544" y2="1799" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="538" y1="1801" x2="544" y2="1801" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
+<line x1="526" y1="1336" x2="536" y2="1336" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="526" y1="1388" x2="536" y2="1388" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="526" y1="1440" x2="536" y2="1440" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="526" y1="1492" x2="536" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="526" y1="1544" x2="536" y2="1544" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="526" y1="1596" x2="536" y2="1596" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="526" y1="1648" x2="536" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="526" y1="1700" x2="536" y2="1700" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="526" y1="1752" x2="536" y2="1752" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="526" y1="1804" x2="536" y2="1804" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="526" y1="1492" x2="526" y2="1804" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="516" y1="1648" x2="526" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M482 1638 L505 1638 L511 1644 L511 1652 L505 1658 L482 1658 L476 1652 L476 1644 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="479" y1="1648" x2="508" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="488" cy="1648" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="493" cy="1648" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="498" cy="1648" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="506" y="1643" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="508" y1="1648" x2="514" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="526" y1="1336" x2="526" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="516" y1="1492" x2="526" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M482 1482 L505 1482 L511 1488 L511 1496 L505 1502 L482 1502 L476 1496 L476 1488 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="479" y1="1492" x2="508" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="488" cy="1492" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="493" cy="1492" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="498" cy="1492" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="506" y="1487" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="508" y1="1492" x2="514" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="456" y1="1648" x2="476" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="388" y="1640" width="66" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<rect x="385" y="1637" width="66" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="418" y="1648" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">species</text>
-<text x="446" y="1669" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
-<rect x="446" y="1643" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="448" y1="1648" x2="454" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="456" y1="1492" x2="476" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="388" y="1484" width="66" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="385" y="1481" width="66" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="418" y="1492" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">species</text>
+<text x="446" y="1513" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="446" y="1487" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="448" y1="1492" x2="454" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<rect x="557" y="1845" width="90" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="602" y="1856" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">reporter_uuid</text>
-<line x1="559" y1="1847" x2="567" y2="1847" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1849" x2="565" y2="1849" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1851" x2="565" y2="1851" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1853" x2="565" y2="1853" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="557" y="1897" width="50" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="582" y="1908" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">name</text>
-<line x1="559" y1="1899" x2="567" y2="1899" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1901" x2="565" y2="1901" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1903" x2="565" y2="1903" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1905" x2="565" y2="1905" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="557" y="1949" width="90" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="602" y="1960" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">project_name</text>
-<line x1="559" y1="1951" x2="567" y2="1951" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1953" x2="565" y2="1953" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1955" x2="565" y2="1955" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="1957" x2="565" y2="1957" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="557" y="2001" width="80" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="597" y="2012" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">website_url</text>
-<line x1="559" y1="2003" x2="567" y2="2003" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2005" x2="565" y2="2005" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2007" x2="565" y2="2007" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2009" x2="565" y2="2009" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="557" y="2053" width="92" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="603" y="2064" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_name</text>
-<line x1="559" y1="2055" x2="567" y2="2055" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2057" x2="565" y2="2057" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2059" x2="565" y2="2059" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2061" x2="565" y2="2061" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="557" y="2105" width="96" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="605" y="2116" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_phone</text>
-<line x1="559" y1="2107" x2="567" y2="2107" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2109" x2="565" y2="2109" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2111" x2="565" y2="2111" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2113" x2="565" y2="2113" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<rect x="557" y="2157" width="92" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="603" y="2168" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">contact_email</text>
-<line x1="559" y1="2159" x2="567" y2="2159" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2161" x2="565" y2="2161" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2163" x2="565" y2="2163" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="559" y1="2165" x2="565" y2="2165" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="547" y1="1856" x2="557" y2="1856" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="1908" x2="557" y2="1908" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="1960" x2="557" y2="1960" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="2012" x2="557" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="2064" x2="557" y2="2064" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="2116" x2="557" y2="2116" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="2168" x2="557" y2="2168" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="547" y1="1856" x2="547" y2="2168" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="537" y1="2012" x2="547" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M503 2002 L526 2002 L532 2008 L532 2016 L526 2022 L503 2022 L497 2016 L497 2008 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="500" y1="2012" x2="529" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="509" cy="2012" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="514" cy="2012" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="519" cy="2012" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="527" y="2007" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="529" y1="2012" x2="535" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1"/>
-
-<line x1="477" y1="2012" x2="497" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="385" y="2001" width="87" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
-<text x="428.5" y="2012" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">reported_by</text>
-<rect x="467" y="2007" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="469" y1="2012" x2="475" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<rect x="385" y="1689" width="85" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="427.5" y="1700" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">person_uuid</text>
+<line x1="387" y1="1691" x2="395" y2="1691" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="1693" x2="393" y2="1693" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="1695" x2="393" y2="1695" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="387" y1="1697" x2="393" y2="1697" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
 <line x1="375" y1="556" x2="385" y2="556" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="375" y1="608" x2="385" y2="608" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="375" y1="660" x2="385" y2="660" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
 <line x1="375" y1="712" x2="385" y2="712" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="375" y1="816" x2="385" y2="816" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="375" y1="1154" x2="385" y2="1154" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="375" y1="1648" x2="385" y2="1648" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="375" y1="2012" x2="385" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="375" y1="556" x2="375" y2="2012" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="365" y1="1362" x2="375" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M331 1352 L354 1352 L360 1358 L360 1366 L354 1372 L331 1372 L325 1366 L325 1358 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="328" y1="1362" x2="357" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="337" cy="1362" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="342" cy="1362" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="347" cy="1362" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="355" y="1357" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="357" y1="1362" x2="363" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="375" y1="764" x2="385" y2="764" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="375" y1="1050" x2="385" y2="1050" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="375" y1="1492" x2="385" y2="1492" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="375" y1="1700" x2="385" y2="1700" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="375" y1="556" x2="375" y2="1700" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="365" y1="1128" x2="375" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M331 1118 L354 1118 L360 1124 L360 1132 L354 1138 L331 1138 L325 1132 L325 1124 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="328" y1="1128" x2="357" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="337" cy="1128" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="342" cy="1128" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="347" cy="1128" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="355" y="1123" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="357" y1="1128" x2="363" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="305" y1="1362" x2="325" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="245" y="1354" width="58" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<rect x="242" y="1351" width="58" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="271" y="1362" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">report</text>
-<text x="295" y="1383" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">1..∞</text>
-<rect x="295" y="1357" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="297" y1="1362" x2="303" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="305" y1="1128" x2="325" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="245" y="1120" width="58" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<rect x="242" y="1117" width="58" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1;stroke-dasharray:4,1"/>
+<text x="271" y="1128" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">report</text>
+<text x="295" y="1149" style="font-family:Arial;font-size:7.2pt;fill:rgb(0,0,0);text-anchor:end;dominant-baseline:central">0..∞</text>
+<rect x="295" y="1123" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="297" y1="1128" x2="303" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="232" y1="88" x2="242" y2="88" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="232" y1="348" x2="242" y2="348" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="232" y1="1362" x2="242" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="232" y1="88" x2="232" y2="1362" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<line x1="222" y1="1102" x2="232" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<path d="M188 1092 L211 1092 L217 1098 L217 1106 L211 1112 L188 1112 L182 1106 L182 1098 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="185" y1="1102" x2="214" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1"/>
-<ellipse cx="194" cy="1102" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="199" cy="1102" rx="2" ry="2" style="rgb(0,0,0)"/>
-<ellipse cx="204" cy="1102" rx="2" ry="2" style="rgb(0,0,0)"/>
-<rect x="212" y="1097" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="214" y1="1102" x2="220" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="232" y1="218" x2="242" y2="218" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="232" y1="478" x2="242" y2="478" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="232" y1="1128" x2="242" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="232" y1="218" x2="232" y2="1128" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<line x1="222" y1="868" x2="232" y2="868" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<path d="M188 858 L211 858 L217 864 L217 872 L211 878 L188 878 L182 872 L182 864 Z" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="185" y1="868" x2="214" y2="868" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<ellipse cx="194" cy="868" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="199" cy="868" rx="2" ry="2" style="rgb(0,0,0)"/>
+<ellipse cx="204" cy="868" rx="2" ry="2" style="rgb(0,0,0)"/>
+<rect x="212" y="863" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="214" y1="868" x2="220" y2="868" style="stroke:rgb(0,0,0);stroke-width:1"/>
 
-<line x1="162" y1="1102" x2="182" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
-<rect x="20" y="1091" width="137" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<text x="88.5" y="1102" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">pf2050_data_standard</text>
-<rect x="152" y="1097" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
-<line x1="154" y1="1102" x2="160" y2="1102" style="stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="162" y1="868" x2="182" y2="868" style="stroke:rgb(0,0,0);stroke-width:1;stroke-linecap:round"/>
+<rect x="20" y="857" width="137" height="22" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="88.5" y="868" style="font-family:Arial;font-size:8pt;fill:rgb(0,0,0);font-weight:bold;text-anchor:middle;dominant-baseline:central">pf2050_data_standard</text>
+<rect x="152" y="863" width="10" height="10" style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1"/>
+<line x1="154" y1="868" x2="160" y2="868" style="stroke:rgb(0,0,0);stroke-width:1"/>
 </svg>
