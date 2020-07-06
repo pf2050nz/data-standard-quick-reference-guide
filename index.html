@@ -67,16 +67,16 @@
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_type">device_type</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_model">device_model</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_status">device_status</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#device:lure">lure</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#device:bait">bait</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_count">device_count</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#device:substance">substance</a>
                     </div>
 
                     <p class="invisible"><a id=""></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-primary"><th colspan="2">device <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the device present at the location and associated with the activity or event that took place.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>A <code>device</code> is a piece equipment used to catch or detect predators.<br/>The <code>device</code> element is the collection of properties that describes a particular piece of equipment.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>A single <code>report</code> element can contain many <code>device</code> elements, with each <code>device</code> element representing a distinct piece of equipment or a component of a single piece of equipment. Equipment reported as a <code>device</code> element for each component, will allow for analysis of component performance e.g. Trap versus Trap and Trap Housing.<br/>XML<br/><code>&lt;device&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_type&gt;Trap&lt;/device_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model&gt;DOC200&lt;/device_model&gt;<br/>&lt;/device&gt;</code><br/>or<br/><code>&lt;device&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_type&gt;Trap&lt;/device_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model&gt;DOC200&lt;/device_model&gt;<br/>&lt;/device&gt;</code><br/><code>&lt;device&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_type&gt;Trap Housing&lt;/device_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model&gt;Long Wooden Tunnel&lt;/device_model&gt;<br/>&lt;/device&gt;</code><br/>JSON<br/><code>{ "device" : [ { "device_type" : "Trap", "device_model" : "DOC200" } ] }</code><br/>or<br/><code>{ "device" : [ { "device_type" : "Trap", "device_model" : "DOC200" }, { "device_type" : "Trap Housing", "device_model" : "Long Wooden Tunnel" } ] }</code></td></tr>
                             <tr><td style="width: 10%">Examples</td><td>DOC200 Trap, Sentry Bait Station, Celium Node</td></tr>
                         </tbody>
                     </table>
@@ -85,8 +85,8 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">device_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the <code>device</code>.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>The publishing <code>system</code> is responsible for generating the UUID. Once published, the <code>device_uuid</code> should not change.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of a particular <code>device</code>.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>A <code>device_uuid</code> should be used when the tracking of predator control equipment is required for asset management, performance and analysis purposes.<br/>The <code>system</code> tracking the <code>device</code> and publishing the dataset is responsible for generating the UUID. Once set and/or published, the <code>device_uuid</code> should not change.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>352E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
 
                         </tbody>
@@ -97,7 +97,7 @@
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">device_type <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>The broad class of <code>device</code> used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>device_type</code> values are stored and published via cloud-based public API. It is recognized that new devices will be developed over time and the cloud-based API may not provide for all devices in use. <code>device_type</code> is not restricted to the list and “Unspecified” is also a valid option. Examples included for demonstration and discussion purposes only.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>device_type</code> values are stored and published via cloud-based public API.<br/>Examples included for demonstration and discussion purposes only.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Trap</code>, <code>Bait Station</code>, <code>Telemetry Device</code></td></tr>
 
                         </tbody>
@@ -123,6 +123,16 @@
                         </tbody>
                     </table>
 
+                    <p class="invisible"><a id="device:device_count"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">device_count <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Number of distinct devices of <code>device_type</code> and <code>device_model</code> at the location used to catch or detect predators.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverage.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>5</code></td></tr>
+                        </tbody>
+                    </table>
+
                     <p class="invisible"><a id="device:substance"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
@@ -143,7 +153,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-primary"><th colspan="2">device_status <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the state of a <code>device</code> use to catch or detect predators.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes the state of a <code>device</code> used to catch or detect predators.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Each status is represented as a <code>status_type</code>, <code>status_value</code> pair.</td></tr>
                             <tr>
                                 <td style="width: 10%">Examples</td>
@@ -577,7 +587,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Name of the person or subsystem that has published the dataset.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Name of the <code>system</code> that has published the dataset.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Examples included for demonstration and discussion purposes only.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Walk the Line</code>, <code>Trap.NZ</code>, <code>CatchIT</code>, <code>EcoTrack</code></td></tr>
                         </tbody>
@@ -589,7 +599,7 @@
                             <tr class="table-secondary"><th colspan="2">data_standard_version <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Version of the data standard.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Indicates to the consuming system what version of the standard the dataset adheres to.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>0.5</code></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>0.7</code></td></tr>
                         </tbody>
                     </table>
 
@@ -617,7 +627,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">contact_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Contact name of the person or subsystem associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Contact name associated with the dataset or file.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>John Smith</code></td></tr>
                         </tbody>
@@ -627,7 +637,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">contact_phone <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Contact phone of the person or subsystem associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Contact phone associated with the dataset or file.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Recommended best practice is to present the phone number in E.164 format. Refer <a href="https://en.wikipedia.org/wiki/E.164" target="_blank">https://en.wikipedia.org/wiki/E.164</a></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>+64123456790</code></td></tr>
                         </tbody>
@@ -637,7 +647,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">contact_email <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Contact email of the person or subsystem associated with the dataset or file.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Contact email associated with the dataset or file.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>john.doe@gmail.com</code></td></tr>
                         </tbody>
@@ -688,11 +698,11 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:data_standard_version">data_standard_version</a></td>
-                            <td class="ex-1 toggleDisplay in">0.6</td>
-                            <td class="ex-2 toggleDisplay">0.6</td>
-                            <td class="ex-3 toggleDisplay">0.6</td>
-                            <td class="ex-4 toggleDisplay">0.6</td>
-                            <td class="ex-5 toggleDisplay">0.6</td>
+                            <td class="ex-1 toggleDisplay in">0.7</td>
+                            <td class="ex-2 toggleDisplay">0.7</td>
+                            <td class="ex-3 toggleDisplay">0.7</td>
+                            <td class="ex-4 toggleDisplay">0.7</td>
+                            <td class="ex-5 toggleDisplay">0.7</td>
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:project_name">project_name</a></td>
@@ -796,7 +806,7 @@
                             <td class="ex-2 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-3 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-4 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-5 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
                             <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device:device_type">device_type</a></td>
@@ -829,6 +839,14 @@
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
                             <td class="ex-4 toggleDisplay">&nbsp;</td>
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device:device_count">device_count</a></td>
+                            <td class="ex-1 toggleDisplay in">1</td>
+                            <td class="ex-2 toggleDisplay">1</td>
+                            <td class="ex-3 toggleDisplay">1</td>
+                            <td class="ex-4 toggleDisplay">1</td>
+                            <td class="ex-5 toggleDisplay">20</td>
                         </tr>
                         <tr>
                             <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance:substance_type">substance_type</a></td>
