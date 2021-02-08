@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="shortcut icon" href=".\images\favicon.ico">
+        <link rel="shortcut icon" href=".\imspecies_ages\favicon.ico">
         <link rel="stylesheet" href="scss\custom.css">
 
         <title>New Zealand Predator Free 2050 Data Standard Quick Reference Guide</title>
@@ -34,6 +34,7 @@
                         <a class="nav-link" href="#definitions">Definitions</a>
                         <a class="nav-link" href="#device">device</a>
                         <a class="nav-link" href="#device_status">device_status</a>
+                        <a class="nav-link" href="#location">location</a>
                         <a class="nav-link" href="#person">person</a>
                         <a class="nav-link" href="#pf2050_data_standard">pf2050_data_standard</a>
                         <a class="nav-link" href="#report">report</a>
@@ -52,10 +53,10 @@
                     <h1>Predator Control Data Standard Quick Reference Guide</h1>
 
                     <p>
-                        When New Zealand achieves Predator Free 2050, it will be due in no small part to thousands of dedicated volunteers and conservation staff who have logged endless hours trekking through unforgiving landscapes to check traps, creating and assessing predator management plans, and managing and analysing data to feed back into planning.<br/>
-                        Achieving Predator Free 2050 will also rely on making the best use of existing tools, and coming up with new tools and approaches. Underpinning both of these will be the effective management, sharing and analysis the vast and invaluable amount of predator control data that is already collected daily across New Zealand and is set to only increase.<br/>
+                        When New Zealand achieves Predator Free 2050, it will be due in no small part to thousands of dedicated volunteers and conservation staff who have logged endless hours trekking through unforgiving landscapes to check traps, creating and assessing predator manspecies_agement plans, and managing and analysing data to feed back into planning.<br/>
+                        Achieving Predator Free 2050 will also rely on making the best use of existing tools, and coming up with new tools and approaches. Underpinning both of these will be the effective manspecies_agement, sharing and analysis the vast and invaluable amount of predator control data that is already collected daily across New Zealand and is set to only increase.<br/>
                         However, integrating such heterogeneous data, collected by multiple people from multiple devices in multiple locations, remains a challenge due to the significant variations that can occur in observational scales, collection protocols, and terminologies (König C., et al., 2019).<br/>
-                        To overcome data integration challenges around predator control data, a call for standards has emerged from those working at all levels, from communities up to agencies and government. Creating and implementing a ‘data standard’ has its challenges, but previous successes have shown that they can be overcome by recognising the issues around data management and having the motivation to address them in a collective manner.
+                        To overcome data integration challenges around predator control data, a call for standards has emerged from those working at all levels, from communities up to species_agencies and government. Creating and implementing a ‘data standard’ has its challenges, but previous successes have shown that they can be overcome by recognising the issues around data manspecies_agement and having the motivation to address them in a collective manner.
                     </p>
 
                     <hr/>
@@ -68,7 +69,6 @@
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_model">device_model</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_status">device_status</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#device:device_count">device_count</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#device:substance">substance</a>
                     </div>
 
                     <p class="invisible"><a id=""></a></p>
@@ -86,7 +86,7 @@
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">device_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of a particular <code>device</code>.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>A <code>device_uuid</code> should be used when the tracking of predator control equipment is required for asset management, performance and analysis purposes.<br/>The <code>system</code> tracking the <code>device</code> and publishing the dataset is responsible for generating the UUID. Once set and/or published, the <code>device_uuid</code> should not change.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>A <code>device_uuid</code> should be used when the tracking of predator control equipment is required for asset manspecies_agement, performance and analysis purposes.<br/>The <code>system</code> tracking the <code>device</code> and publishing the dataset is responsible for generating the UUID. Once set and/or published, the <code>device_uuid</code> should not change.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>352E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
 
                         </tbody>
@@ -128,18 +128,8 @@
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">device_count <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Number of distinct devices of <code>device_type</code> and <code>device_model</code> at the location used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverage.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverspecies_age.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>5</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="device:substance"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-primary"><th colspan="2">substance <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td><a href="#substance"># Go to definition.</a></td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td></td></tr>
                         </tbody>
                     </table>
 
@@ -185,6 +175,42 @@
                         </tbody>
                     </table>
 
+                    <h2 id="location">location</h2>
+                    <div>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#location:location_uuid">location_uuid</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#location:location_wkt">location_wkt</a>
+                    </div>
+
+                    <p class="invisible"><a id="location:location"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">location <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
+                                <tr><td style="width: 10%">Definition</td><td>Describes the location where the activity or event took place.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code></code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="location:location_uuid"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">location_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                                <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) that idenitifies a location.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>352E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="location:location_wkt"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">location_wkt <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Well-known text (WKT) representation of geometry. Refer <a href="https://www.ogc.org/standards/sfa" target="_blank">https://www.ogc.org/standards/sfa.</a> All coordinates assumed WGS84 unless specified otherwise. It is recognized that in many circumstances sharing location information is sensitive. In these cases, care should be taken to obfuscate the actual location by reducing accuracy or using alternative, safe location data.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>POINT(-175.123456 35.123456)</code>, <code>POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</code></td></tr>
+                        </tbody>
+                    </table>
+
                     <h2 id="person">person</h2>
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#person:person_uuid">person_uuid</a>
@@ -223,16 +249,29 @@
 
                     <h2 id="pf2050_data_standard">pf2050_data_standard</h2>
                     <div>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:system">system</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:device">device</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:location">location</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:person">person</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:report">report</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:substance">substance</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#pf2050_data_standard:system">system</a>
                     </div>
 
-                    <p class="invisible"><a id="pf2050_data_standard:system"></a></p>
+                    <p class="invisible"><a id="pf2050_data_standard:device"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">system <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td><a href="#system"># Go to definition.</a></td></tr>
+                            <tr class="table-primary"><th colspan="2">device <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#device"># Go to definition.</a></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="pf2050_data_standard:location"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">location <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#location"># Go to definition.</a></td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td></td></tr>
                         </tbody>
@@ -258,15 +297,36 @@
                         </tbody>
                     </table>
 
+                    <p class="invisible"><a id="pf2050_data_standard:substance"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">substance <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#substance"># Go to definition.</a></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="pf2050_data_standard:system"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">system <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#system"># Go to definition.</a></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td></td></tr>
+                        </tbody>
+                    </table>
+
                     <h2 id="report">report</h2>
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:report_uuid">report_uuid</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:type">type</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:report_type">type</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_start">date_start</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_end">date_end</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:location">location</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:location_uuid">location_uuid</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:device">device</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:species">species</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:substance">substance</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:person_uuid">person_uuid</a>
                     </div>
 
@@ -290,7 +350,7 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="report:type"></a></p>
+                    <p class="invisible"><a id="report:report_type"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">type <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
@@ -320,13 +380,13 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="report:location"></a></p>
+                    <p class="invisible"><a id="report:location_uuid"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">location <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Describes the location where the activity or event took place.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Well-known text (WKT) representation of geometry. Refer <a href="https://www.ogc.org/standards/sfa" target="_blank">https://www.ogc.org/standards/sfa.</a> All coordinates assumed WGS84 unless specified otherwise. It is recognized that in many circumstances sharing location information is sensitive. In these cases, care should be taken to obfuscate the actual location by reducing accuracy or using alternative, safe location data.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>POINT(-175.123456 35.123456)</code>, <code>POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</code></td></tr>
+                            <tr class="table-secondary"><th colspan="2">location_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the person that captured the record-entry.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td><a href="#location">Refer location definition for more details.</a></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
                         </tbody>
                     </table>
 
@@ -336,7 +396,7 @@
                             <tr class="table-primary"><th colspan="2">device <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td><a href="#device">Go to definition.</a></td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td>A DOC200 trap, a bait station, a cage trap, a sensor device with telemetry.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td>A DOC200 trap, a bait station, a cspecies_age trap, a sensor device with telemetry.</td></tr>
                         </tbody>
                     </table>
 
@@ -347,6 +407,16 @@
                             <tr><td style="width: 10%">Definition</td><td><a href="#species"># Go to definition.</a></td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code></code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="report:substance"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-primary"><th colspan="2">substance <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#substance"># Go to definition.</a></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td></td></tr>
                         </tbody>
                     </table>
 
@@ -362,13 +432,13 @@
 
                     <h2 id="species">species</h2>
                     <div>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_id">species_id</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:common_name">common_name</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:scientific_name">scientific_name</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:age">age</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:sex">sex</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:count">count</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:target">target</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_uuid">species_uuid</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_common_name">species_common_name</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_scientific_name">species_scientific_name</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_age">species_age</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_sex">species_sex</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_count">count</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#species:species_target">target</a>
                     </div>
 
                     <p class="invisible"><a id=""></a></p>
@@ -381,70 +451,70 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:species_id"></a></p>
+                    <p class="invisible"><a id="species:species_uuid"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">species_id <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Identifier of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_id</code> data is stored and published via cloud-based API. Species may be grouped into sets to provide for layperson identification e.g. "small mustelid".</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>789</code></td></tr>
+                            <tr class="table-secondary"><th colspan="2">species_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_uuid</code> data is stored and published via cloud-based API. Species may be grouped into sets to provide for layperson identification e.g. "small mustelid".</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:common_name"></a></p>
+                    <p class="invisible"><a id="species:species_common_name"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">common_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">species_common_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Common name of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>common_name</code> data is stored and published via cloud-based API and data sourced from the <a href="http://www.nzor.org.nz/" target="_blank">New Zealand Organism Register.</a> Examples listed are for demonstration and discussion purposes only.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_common_name</code> data is stored and published via cloud-based API and data sourced from the <a href="http://www.nzor.org.nz/" target="_blank">New Zealand Organism Register.</a> Examples listed are for demonstration and discussion purposes only.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Rat</code>, <code>Norway Rat</code>, <code>Ship Rat</code>, <code>Possum</code>, <code>Mustelid</code>, <code>Ferret</code></td></tr>
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:scientific_name"></a></p>
+                    <p class="invisible"><a id="species:species_scientific_name"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">scientific_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">species_scientific_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Latin name (genus species) of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>scientific_name</code> data is stored and published via cloud-based API and data sourced from the <a href="http://www.nzor.org.nz/" target="_blank">New Zealand Organism Register.</a> Examples listed are for demonstration and discussion purposes only.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_scientific_name</code> data is stored and published via cloud-based API and data sourced from the <a href="http://www.nzor.org.nz/" target="_blank">New Zealand Organism Register.</a> Examples listed are for demonstration and discussion purposes only.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Rattus</code>, <code>Rattus norvegicus</code>, <code>Rattus rattus</code>, <code>Trichosurus vulpecula</code>, <code>Mustela</code>, <code>Mustela putorius furo</code></td></tr>
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:age"></a></p>
+                    <p class="invisible"><a id="species:species_age"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">age <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Approximate age of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>age</code> valid values are stored and published via cloud-based API.</td></tr>
+                            <tr class="table-secondary"><th colspan="2">species_age <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Approximate species_age of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_age</code> valid values are stored and published via cloud-based API.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Unknown</code>, <code>Baby</code>, <code>Juvenile</code>, <code>Adult</code></td></tr>
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:sex"></a></p>
+                    <p class="invisible"><a id="species:species_sex"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">sex <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Sex of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>sex</code> valid values are stored and published via cloud-based API.</td></tr>
+                            <tr class="table-secondary"><th colspan="2">species_sex <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>species_sex of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_sex</code> valid values are stored and published via cloud-based API.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Unknown</code>, <code>Male</code>, <code>Female</code></td></tr>
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:count"></a></p>
+                    <p class="invisible"><a id="species:species_count"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">count <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">species_count <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Number of individual animals detected or caught at a location, during, or prior to, an activity or event.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Default and assumed value if <code>count</code> data is missing is 1.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>3</code></td></tr>
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="species:target"></a></p>
+                    <p class="invisible"><a id="species:species_target"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">target <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">species_target <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Indicates if the animals detected or caught at a location, during, or prior to, an activity or event were the target species.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Default and assumed value if <code>target</code> data is missing is True (or 1). Use the value False (or 0) to indicate bycatch.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>True</code> or <code>1</code>, <code>False</code> or <code>0</code></td></tr>
@@ -453,8 +523,8 @@
 
                     <h2 id="substance">substance</h2>
                     <div>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#substance:substance_uuid">substance_uuid</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#substance:substance_type">substance_type</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#substance:substance_id">substance_id</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#substance:substance_name">substance_name</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#substance:substance_status">substance_status</a>
                     </div>
@@ -469,6 +539,16 @@
                         </tbody>
                     </table>
 
+                    <p class="invisible"><a id="substance:substance_uuid"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">substance_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of substance used to catch or detect predators.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>substance_uuid</code> data is stored and published via cloud-based API.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
+                        </tbody>
+                    </table>
+
                     <p class="invisible"><a id="substance:substance_type"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
@@ -476,16 +556,6 @@
                             <tr><td style="width: 10%">Definition</td><td>Type of substance used to catch or detect predators.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Recommend <code>substance_type</code> data is stored and published via cloud-based API.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Bait</code>, <code>Lure</code>, <code>Pre-Feed</code></td></tr>
-                        </tbody>
-                    </table>
-
-                    <p class="invisible"><a id="substance:substance_id"></a></p>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr class="table-secondary"><th colspan="2">substance_id <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Identifier of substance used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>substance_id</code> data is stored and published via cloud-based API.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>123</code></td></tr>
                         </tbody>
                     </table>
 
@@ -673,7 +743,8 @@
 
                     <table class="table table-sm table-bordered">
                         <tr class="table-primary">
-                            <th style="width: 40%">Field Names</th>
+                            <th style="width: 35%">Fully Qualified Field Name</th>
+                            <th style="width: 5%">Field Name</th>
                             <th class="ex-1 toggleDisplay in">Example 1</th>
                             <th class="ex-2 toggleDisplay">Example 2</th>
                             <th class="ex-3 toggleDisplay">Example 3</th>
@@ -682,6 +753,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:system_uuid">system_uuid</a></td>
+                            <td><a href="#system:system_uuid">system_uuid</a></td>
                             <td class="ex-1 toggleDisplay in">152e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-2 toggleDisplay">152e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-3 toggleDisplay">152e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
@@ -690,6 +762,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:name">name</a></td>
+                            <td><a href="#system:name">name</a></td>
                             <td class="ex-1 toggleDisplay in">Some System</td>
                             <td class="ex-2 toggleDisplay">Some System</td>
                             <td class="ex-3 toggleDisplay">Some System</td>
@@ -698,6 +771,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:data_standard_version">data_standard_version</a></td>
+                            <td><a href="#system:data_standard_version">data_standard_version</a></td>
                             <td class="ex-1 toggleDisplay in">0.7</td>
                             <td class="ex-2 toggleDisplay">0.7</td>
                             <td class="ex-3 toggleDisplay">0.7</td>
@@ -706,6 +780,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:project_name">project_name</a></td>
+                            <td><a href="#system:project_name">project_name</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -714,6 +789,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:website_url">website_url</a></td>
+                            <td><a href="#system:website_url">website_url</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -722,6 +798,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:contact_name">contact_name</a></td>
+                            <td><a href="#system:contact_name">contact_name</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -730,6 +807,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:contact_phone">contact_phone</a></td>
+                            <td><a href="#system:contact_phone">contact_phone</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -738,6 +816,7 @@
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:contact_email">contact_email</a></td>
+                            <td><a href="#system:contact_email">contact_email</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -745,7 +824,53 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
+                            <td><a href="#device">device.</a><a href="#device:device_uuid">device_uuid</a></td>
+                            <td><a href="#device:device_uuid">device_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                            <td class="ex-4 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#device">device.</a><a href="#device:device_type">device_type</a></td>
+                            <td><a href="#device:device_type">device_type</a></td>
+                            <td class="ex-1 toggleDisplay in">Trap</td>
+                            <td class="ex-2 toggleDisplay">Trap</td>
+                            <td class="ex-3 toggleDisplay">Bait Station</td>
+                            <td class="ex-4 toggleDisplay">Bait Station</td>
+                            <td class="ex-5 toggleDisplay">Trap</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#device">device.</a><a href="#device:device_model">device_model</a></td>
+                            <td><a href="#device:device_model">device_model</a></td>
+                            <td class="ex-1 toggleDisplay in">DOC200</td>
+                            <td class="ex-2 toggleDisplay">DOC200</td>
+                            <td class="ex-3 toggleDisplay">Sentry Bait Station 200g</td>
+                            <td class="ex-4 toggleDisplay">Sentry Bait Station 200g</td>
+                            <td class="ex-5 toggleDisplay">DOC200</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#location">location.</a><a href="#location:location_uuid">location_uuid</a></td>
+                            <td><a href="#location:location_uuid">location_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-4 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-5 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#location">location.</a><a href="#location:location_wkt">location_wkt</a></td>
+                            <td><a href="#location:location_wkt">location_wkt</a></td>
+                            <td class="ex-1 toggleDisplay in">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-2 toggleDisplay">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-3 toggleDisplay">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-4 toggleDisplay">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-5 toggleDisplay">POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</td>
+                        </tr>
+                        <tr>
                             <td><a href="#person">person.</a><a href="#person:person_uuid">person_uuid</a></td>
+                            <td><a href="#person:person_uuid">person_uuid</a></td>
                             <td class="ex-1 toggleDisplay in">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-2 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-3 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
@@ -754,6 +879,7 @@
                         </tr>
                         <tr>
                             <td><a href="#person">person.</a><a href="#person:name">name</a></td>
+                            <td><a href="#person:name">name</a></td>
                             <td class="ex-1 toggleDisplay in">Geoff</td>
                             <td class="ex-2 toggleDisplay">Geoff</td>
                             <td class="ex-3 toggleDisplay">Geoff</td>
@@ -761,143 +887,17 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#report:report_uuid">report_uuid</a></td>
-                            <td class="ex-1 toggleDisplay in">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-2 toggleDisplay">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-3 toggleDisplay">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-4 toggleDisplay">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-5 toggleDisplay">c67d1bef-dbce-db87-4dfb-90eb9d65d8f2</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#report:type">type</a></td>
-                            <td class="ex-1 toggleDisplay in">Visit</td>
-                            <td class="ex-2 toggleDisplay">Visit</td>
-                            <td class="ex-3 toggleDisplay">Visit</td>
-                            <td class="ex-4 toggleDisplay">Visit</td>
-                            <td class="ex-5 toggleDisplay">Catch</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#date_start">date_start.</a> <a href="#date_start">date_start</a></td>
-                            <td class="ex-1 toggleDisplay in">2019-06-05T14:10:15Z</td>
-                            <td class="ex-2 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-3 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-4 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-5 toggleDisplay">2020-02-01T00:00:00Z</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#date_end">date_end.</a> <a href="#date_end">date_end</a></td>
-                            <td class="ex-1 toggleDisplay in">2019-06-05T14:10:15Z</td>
-                            <td class="ex-2 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-3 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-4 toggleDisplay">2019-06-05T14:10:15Z</td>
-                            <td class="ex-5 toggleDisplay">2020-02-29T23:59:59Z</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#report:location">location</a></td>
-                            <td class="ex-1 toggleDisplay in">POINT(-175.123456 35.123456)</td>
-                            <td class="ex-2 toggleDisplay">POINT(-175.123456 35.123456)</td>
-                            <td class="ex-3 toggleDisplay">POINT(-175.123456 35.123456)</td>
-                            <td class="ex-4 toggleDisplay">POINT(-175.123456 35.123456)</td>
-                            <td class="ex-5 toggleDisplay">POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device:device_uuid">device_uuid</a></td>
-                            <td class="ex-1 toggleDisplay in">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-2 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-3 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-4 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device:device_type">device_type</a></td>
-                            <td class="ex-1 toggleDisplay in">Trap</td>
-                            <td class="ex-2 toggleDisplay">Trap</td>
-                            <td class="ex-3 toggleDisplay">Trap</td>
-                            <td class="ex-4 toggleDisplay">Trap</td>
-                            <td class="ex-5 toggleDisplay">Trap</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device:device_model">device_model</a></td>
-                            <td class="ex-1 toggleDisplay in">DOC200</td>
-                            <td class="ex-2 toggleDisplay">DOC200</td>
-                            <td class="ex-3 toggleDisplay">DOC200</td>
-                            <td class="ex-4 toggleDisplay">DOC200</td>
-                            <td class="ex-5 toggleDisplay">DOC200</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device_status">device_status.</a> <a href="#device_status:status_type">status_type</a></td>
-                            <td class="ex-1 toggleDisplay in">Arrival</td>
-                            <td class="ex-2 toggleDisplay">Departure</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device_status">device_status.</a> <a href="#device_status:status_value">status_value</a></td>
-                            <td class="ex-1 toggleDisplay in">Triggered</td>
-                            <td class="ex-2 toggleDisplay">Set</td>
-                            <td class="ex-3 toggleDisplay">&nbsp;</td>
-                            <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#device:device_count">device_count</a></td>
-                            <td class="ex-1 toggleDisplay in">1</td>
-                            <td class="ex-2 toggleDisplay">1</td>
-                            <td class="ex-3 toggleDisplay">1</td>
-                            <td class="ex-4 toggleDisplay">1</td>
-                            <td class="ex-5 toggleDisplay">20</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance:substance_type">substance_type</a></td>
-                            <td class="ex-1 toggleDisplay in">Bait</td>
-                            <td class="ex-2 toggleDisplay">Bait</td>
-                            <td class="ex-3 toggleDisplay">Bait</td>
-                            <td class="ex-4 toggleDisplay">Bait</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance:substance_id">substance_id</a></td>
-                            <td class="ex-1 toggleDisplay in">456</td>
-                            <td class="ex-2 toggleDisplay">456</td>
-                            <td class="ex-3 toggleDisplay">456</td>
-                            <td class="ex-4 toggleDisplay">456</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance:substance_name">substance_name</a></td>
-                            <td class="ex-1 toggleDisplay in">Brodaficoum</td>
-                            <td class="ex-2 toggleDisplay">Brodaficoum</td>
-                            <td class="ex-3 toggleDisplay">Brodaficoum</td>
-                            <td class="ex-4 toggleDisplay">Brodaficoum</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance_status">substance_status.</a> <a href="#substance_status:status_type">status_type</a></td>
-                            <td class="ex-1 toggleDisplay in">Arrival</td>
-                            <td class="ex-2 toggleDisplay">Departure</td>
-                            <td class="ex-3 toggleDisplay">Grams Taken</td>
-                            <td class="ex-4 toggleDisplay">Grams Added</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#device">device.</a> <a href="#substance">substance.</a> <a href="#substance_status">substance_status.</a> <a href="#substance_status:status_value">status_value</a></td>
-                            <td class="ex-1 toggleDisplay in">Gone</td>
-                            <td class="ex-2 toggleDisplay">Replaced</td>
-                            <td class="ex-3 toggleDisplay">28</td>
-                            <td class="ex-4 toggleDisplay">28</td>
-                            <td class="ex-5 toggleDisplay">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:species_id">species_id</a></td>
-                            <td class="ex-1 toggleDisplay in">789</td>
+                            <td><a href="#species">species.</a><a href="#species:species_uuid">species_uuid</a></td>
+                            <td><a href="#species:species_uuid">species_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
                             <td class="ex-4 toggleDisplay">&nbsp;</td>
-                            <td class="ex-5 toggleDisplay">789</td>
+                            <td class="ex-5 toggleDisplay">A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:common_name">common_name</a></td>
+                            <td><a href="#species">species.</a><a href="#species:species_common_name">species_common_name</a></td>
+                            <td><a href="#species:species_common_name">species_common_name</a></td>
                             <td class="ex-1 toggleDisplay in">Rat</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -905,7 +905,8 @@
                             <td class="ex-5 toggleDisplay">Rat</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:scientific_name">scientific_name</a></td>
+                            <td><a href="#species">species.</a><a href="#species:species_scientific_name">species_scientific_name</a></td>
+                            <td><a href="#species:species_scientific_name">species_scientific_name</a></td>
                             <td class="ex-1 toggleDisplay in">&nbsp;</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -913,7 +914,152 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:age">age</a></td>
+                            <td><a href="#substance">substance.</a><a href="#substance:substance_uuid">substance_uuid</a></td>
+                            <td><a href="#substance:substance_uuid">substance_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">B52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-2 toggleDisplay">B52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-3 toggleDisplay">C52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-4 toggleDisplay">C52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#substance">substance.</a><a href="#substance:substance_type">substance_type</a></td>
+                            <td><a href="#substance:substance_type">substance_type</a></td>
+                            <td class="ex-1 toggleDisplay in">Lure</td>
+                            <td class="ex-2 toggleDisplay">Lure</td>
+                            <td class="ex-3 toggleDisplay">Bait</td>
+                            <td class="ex-4 toggleDisplay">Bait</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#substance">substance.</a><a href="#substance:substance_name">substance_name</a></td>
+                            <td><a href="#substance:substance_name">substance_name</a></td>
+                            <td class="ex-1 toggleDisplay in">Chicken Egg</td>
+                            <td class="ex-2 toggleDisplay">Chicken Egg</td>
+                            <td class="ex-3 toggleDisplay">Brodaficoum</td>
+                            <td class="ex-4 toggleDisplay">Brodaficoum</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#report:report_uuid">report_uuid</a></td>
+                            <td><a href="#report:report_uuid">report_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-4 toggleDisplay">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-5 toggleDisplay">c67d1bef-dbce-db87-4dfb-90eb9d65d8f2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#report:type">type</a></td>
+                            <td><a href="#report:type">type</a></td>
+                            <td class="ex-1 toggleDisplay in">Visit</td>
+                            <td class="ex-2 toggleDisplay">Visit</td>
+                            <td class="ex-3 toggleDisplay">Visit</td>
+                            <td class="ex-4 toggleDisplay">Visit</td>
+                            <td class="ex-5 toggleDisplay">Catch</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#report:date_start">date_start</a></td>
+                            <td><a href="#date_start">date_start</a></td>
+                            <td class="ex-1 toggleDisplay in">2019-06-05T14:10:15Z</td>
+                            <td class="ex-2 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-3 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-4 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-5 toggleDisplay">2020-02-01T00:00:00Z</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#report:date_end">date_end</a></td>
+                            <td><a href="#date_end">date_end</a></td>
+                            <td class="ex-1 toggleDisplay in">2019-06-05T14:10:15Z</td>
+                            <td class="ex-2 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-3 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-4 toggleDisplay">2019-06-05T14:10:15Z</td>
+                            <td class="ex-5 toggleDisplay">2020-02-29T23:59:59Z</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#location:location_uuid">location_uuid</a></td>
+                            <td><a href="#location:location_uuid">location_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-4 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-5 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#device">device.</a><a href="#device:device_uuid">device_uuid</a></td>
+                            <td><a href="#device:device_uuid">device_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                            <td class="ex-4 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#device">device.</a><a href="#device_status">device_status.</a><a href="#device_status:status_type">status_type</a></td>
+                            <td><a href="#device_status:status_type">status_type</a></td>
+                            <td class="ex-1 toggleDisplay in">Arrival</td>
+                            <td class="ex-2 toggleDisplay">Departure</td>
+                            <td class="ex-3 toggleDisplay">&nbsp;</td>
+                            <td class="ex-4 toggleDisplay">&nbsp;</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#device">device.</a><a href="#device_status">device_status.</a><a href="#device_status:status_value">status_value</a></td>
+                            <td><a href="#device_status:status_value">status_value</a></td>
+                            <td class="ex-1 toggleDisplay in">Triggered</td>
+                            <td class="ex-2 toggleDisplay">Set</td>
+                            <td class="ex-3 toggleDisplay">&nbsp;</td>
+                            <td class="ex-4 toggleDisplay">&nbsp;</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#device">device.</a><a href="#device:device_count">device_count</a></td>
+                            <td><a href="#device:device_count">device_count</a></td>
+                            <td class="ex-1 toggleDisplay in">1</td>
+                            <td class="ex-2 toggleDisplay">1</td>
+                            <td class="ex-3 toggleDisplay">1</td>
+                            <td class="ex-4 toggleDisplay">1</td>
+                            <td class="ex-5 toggleDisplay">20</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#substance">substance.</a><a href="#substance:substance_uuid">substance_uuid</a></td>
+                            <td><a href="#substance:substance_uuid">substance_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">B52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-2 toggleDisplay">B52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-3 toggleDisplay">C52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-4 toggleDisplay">C52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#substance">substance.</a><a href="#substance_status">substance_status.</a><a href="#substance_status:status_type">status_type</a></td>
+                            <td><a href="#substance_status:status_type">status_type</a></td>
+                            <td class="ex-1 toggleDisplay in">Arrival</td>
+                            <td class="ex-2 toggleDisplay">Departure</td>
+                            <td class="ex-3 toggleDisplay">Grams Taken</td>
+                            <td class="ex-4 toggleDisplay">Grams Added</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#substance">substance.</a><a href="#substance_status">substance_status.</a><a href="#substance_status:status_value">status_value</a></td>
+                            <td><a href="#substance_status:status_value">status_value</a></td>
+                            <td class="ex-1 toggleDisplay in">Gone</td>
+                            <td class="ex-2 toggleDisplay">Replaced</td>
+                            <td class="ex-3 toggleDisplay">28</td>
+                            <td class="ex-4 toggleDisplay">28</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#species">species.</a><a href="#species:species_uuid">species_uuid</a></td>
+                            <td><a href="#species:species_uuid">species_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                            <td class="ex-2 toggleDisplay">&nbsp;</td>
+                            <td class="ex-3 toggleDisplay">&nbsp;</td>
+                            <td class="ex-4 toggleDisplay">&nbsp;</td>
+                            <td class="ex-5 toggleDisplay">A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#species">species.</a><a href="#species:species_age">species_age</a></td>
+                            <td><a href="#species:species_age">species_age</a></td>
                             <td class="ex-1 toggleDisplay in">Unknown</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -921,7 +1067,8 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:sex">sex</a></td>
+                            <td><a href="#report">report.</a><a href="#species">species.</a><a href="#species:species_sex">species_sex</a></td>
+                            <td><a href="#species:species_sex">species_sex</a></td>
                             <td class="ex-1 toggleDisplay in">Unknown</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -929,7 +1076,8 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:count">count</a></td>
+                            <td><a href="#report">report.</a><a href="#species">species.</a><a href="#species:species_count">species_count</a></td>
+                            <td><a href="#species:species_count">species_count</a></td>
                             <td class="ex-1 toggleDisplay in">1</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -937,7 +1085,8 @@
                             <td class="ex-5 toggleDisplay">56</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#species">species.</a> <a href="#species:target">target</a></td>
+                            <td><a href="#report">report.</a><a href="#species">species.</a><a href="#species:species_target">species_target</a></td>
+                            <td><a href="#species:species_target">species_target</a></td>
                             <td class="ex-1 toggleDisplay in">True</td>
                             <td class="ex-2 toggleDisplay">&nbsp;</td>
                             <td class="ex-3 toggleDisplay">&nbsp;</td>
@@ -945,7 +1094,8 @@
                             <td class="ex-5 toggleDisplay">True</td>
                         </tr>
                         <tr>
-                            <td><a href="#report">report.</a> <a href="#person_uuid">person_uuid</a></td>
+                            <td><a href="#report">report.</a><a href="#person_uuid">person_uuid</a></td>
+                            <td><a href="#person_uuid">person_uuid</a></td>
                             <td class="ex-1 toggleDisplay in">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-2 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-3 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
