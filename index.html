@@ -76,7 +76,7 @@
                         <tbody>
                             <tr class="table-primary"><th colspan="2">device <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>A <code>device</code> is a piece equipment used to catch or detect predators.<br/>The <code>device</code> element is the collection of properties that describes a particular piece of equipment or a particulat set of equipment.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>A single <code>report</code> element can contain many <code>device</code> elements, with each <code>device</code> element representing a distinct piece of equipment or a component of a single piece of equipment. Equipment reported as a <code>device</code> element for each component, will allow for analysis of component performance e.g. Trap versus Trap and Trap Housing.<br/>XML<br/><code>&lt;device&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_type&gt;Trap&lt;/device_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model&gt;DOC200&lt;/device_model&gt;<br/>&lt;/device&gt;</code><br/>or<br/><code>&lt;device&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_type&gt;Trap&lt;/device_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model&gt;DOC200&lt;/device_model&gt;<br/>&lt;/device&gt;</code><br/><code>&lt;device&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_type&gt;Trap Housing&lt;/device_type&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model&gt;Long Wooden Tunnel&lt;/device_model&gt;<br/>&lt;/device&gt;</code><br/>JSON<br/><code>{ "device" : [ { "device_type" : "Trap", "device_model" : "DOC200" } ] }</code><br/>or<br/><code>{ "device" : [ { "device_type" : "Trap", "device_model" : "DOC200" }, { "device_type" : "Trap Housing", "device_model" : "Long Wooden Tunnel" } ] }</code></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>A single <code>report</code> element can contain many <code>device</code> elements, with each <code>device</code> element representing a distinct piece of equipment or a component of a single piece of equipment. Equipment can be reported with a <code>device_model_uuid</code> element for each component, will allow for analysis of component performance e.g. Trap versus Trap and Trap Housing.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td>DOC200 Trap, Sentry Bait Station, Celium Node</td></tr>
                         </tbody>
                     </table>
@@ -134,8 +134,23 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-primary"><th colspan="2">device_model <span class="badge badge-primary float-right ml-1">Class</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>The models of <code>device</code>  of used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Recommend <code>device_model</code> values are stored and published via cloud-based API and based on commercially available products in New Zealand. It is recognized that new devices will be developed over time and the cloud-based API may not provide for all devices in use. Examples included for demonstration and discussion purposes only.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>The models, or components of <code>device</code> used to catch or detect predators.</td></tr>
+                            <tr><td style="width: 10%">Comments</td>
+                                <td>Recommend <code>device_model</code> values are stored and published via cloud-based API and based on commercially available products in New Zealand. It is recognized that new devices will be developed over time and the cloud-based API may not provide for all devices in use. Examples included for demonstration and discussion purposes only.
+                                    <br/>XML
+                                    <br/>
+                                    <code>
+                                        &lt;device_model&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model_uuid&gt;352E11AC-B9FA-11E8-8D80-0220ED3BCA7A&lt;/device_model_uuid&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model_type&gt;Trap&lt;/device_model_type&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;device_model_name&gt;DOC200&lt;/device_model_name&gt;<br/>
+                                        &lt;/device_model&gt;
+                                    </code><br/>
+                                    <br/>JSON
+                                    <br/>
+                                    <code>{ "device_model" : [ { "device_model_uuid": "352E11AC-B9FA-11E8-8D80-0220ED3BCA7A", "device_model_type" : "Trap", "device_model_name" : "DOC200" } ] }</code>
+                                </td>
+                            </tr>
                             <tr><td style="width: 10%">Examples</td><td><code>DOC200</code>, <code>Timms</code>, <code>Goodnature A24</code>, <code>Sentry Bait Station</code>, <code>Protecta Eco Ambush Rat Bait Station</code></td></tr>
                         </tbody>
                     </table>
@@ -154,7 +169,7 @@
                     <p class="invisible"><a id="device_model:device_model_name"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">device_model_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">device_model_name <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>The name of model of used to catch or detect predators.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>DOC200</code>, <code>Timms</code>, <code>Goodnature A24</code>, <code>Sentry Bait Station</code>, <code>Protecta Eco Ambush Rat Bait Station</code></td></tr>
@@ -218,6 +233,7 @@
                     <div>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#location:location_uuid">location_uuid</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#location:location_wkt">location_wkt</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#location:location_attribute">location_attribute</a>
                     </div>
 
                     <p class="invisible"><a id="location:location"></a></p>
@@ -233,8 +249,8 @@
                     <p class="invisible"><a id="location:location_uuid"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">location_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
-                                <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) that idenitifies a location.</td></tr>
+                            <tr class="table-secondary"><th colspan="2">location_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                                <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) that identifies a location.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>352E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
                         </tbody>
@@ -243,10 +259,20 @@
                     <p class="invisible"><a id="location:location_wkt"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-primary"><th colspan="2">location_wkt <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
+                            <tr class="table-secondary"><th colspan="2">location_wkt <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td></td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Well-known text (WKT) representation of geometry. Refer <a href="https://www.ogc.org/standards/sfa" target="_blank">https://www.ogc.org/standards/sfa.</a> All coordinates assumed WGS84 unless specified otherwise. It is recognized that in many circumstances sharing location information is sensitive. In these cases, care should be taken to obfuscate the actual location by reducing accuracy or using alternative, safe location data.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>POINT(-175.123456 35.123456)</code>, <code>POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</code></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="location:location_attribute"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">location_attribute <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>More details regarding the particular location and any details that may improve analysis over time.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>A particular location may have many <code>location_attribute</code> elements.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>Up Tree</code>, <code>Next To Stream</code></td></tr>
                         </tbody>
                     </table>
 
@@ -358,11 +384,12 @@
 
                     <h2 id="report">report</h2>
                     <div>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:data_standard_version">data_standard_version</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:report_uuid">report_uuid</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:report_type">type</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_start">date_start</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:date_end">date_end</a>
-                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:location_uuid">location_uuid</a>
+                        <a class="btn btn-sm btn-outline-secondary m-1" href="#report:location">location</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:device">device</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:species">species</a>
                         <a class="btn btn-sm btn-outline-secondary m-1" href="#report:substance">substance</a>
@@ -376,6 +403,16 @@
                             <tr><td style="width: 10%">Definition</td><td>Collection of properties that describes an activity or event to catch or detect predators.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
                             <tr><td style="width: 10%">Examples</td><td>A visit to inspect a trap. A report by a telemetry device installed on a trap. A visit to replenish a bait station. The aggregation of data collected during trap inspections over a period.</td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="invisible"><a id="report:data_standard_version"></a></p>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr class="table-secondary"><th colspan="2">data_standard_version <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Version of the data standard.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Indicates to the consuming system what version of the standard the particular report adheres to.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>0.10</code></td></tr>
                         </tbody>
                     </table>
 
@@ -419,13 +456,13 @@
                         </tbody>
                     </table>
 
-                    <p class="invisible"><a id="report:location_uuid"></a></p>
+                    <p class="invisible"><a id="report:location"></a></p>
                     <table class="table table-sm table-bordered">
                         <tbody>
-                            <tr class="table-secondary"><th colspan="2">location_uuid <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Universally Unique Identifier (UUID) of the person that captured the record-entry.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td><a href="#location">Refer location definition for more details.</a></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>A52E11AC-B9FA-11E8-8D80-0220ED3BCA7A</code></td></tr>
+                            <tr class="table-primary"><th colspan="2">location <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
+                            <tr><td style="width: 10%">Definition</td><td><a href="#location"># Go to definition.</a></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td></td></tr>
                         </tbody>
                     </table>
 
@@ -435,7 +472,7 @@
                             <tr class="table-primary"><th colspan="2">device <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td><a href="#device">Go to definition.</a></td></tr>
                             <tr><td style="width: 10%">Comments</td><td></td></tr>
-                            <tr><td style="width: 10%">Examples</td><td>A DOC200 trap, a bait station, a cspecies_age trap, a sensor device with telemetry.</td></tr>
+                            <tr><td style="width: 10%">Examples</td><td>A DOC200 trap, a bait station, a cage trap, a sensor device with telemetry.</td></tr>
                         </tbody>
                     </table>
 
@@ -534,7 +571,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">species_sex <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>species_sex of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Sex of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_sex</code> valid values are stored and published via cloud-based API.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Unknown</code>, <code>Male</code>, <code>Female</code></td></tr>
                         </tbody>
@@ -708,7 +745,7 @@
                             <tr class="table-secondary"><th colspan="2">data_standard_version <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Version of the data standard.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Indicates to the consuming system what version of the standard the dataset adheres to.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>0.7</code></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>0.10</code></td></tr>
                         </tbody>
                     </table>
 
@@ -811,11 +848,11 @@
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:data_standard_version">data_standard_version</a></td>
                             <td><a href="#system:data_standard_version">data_standard_version</a></td>
-                            <td class="ex-1 toggleDisplay in">0.9</td>
-                            <td class="ex-2 toggleDisplay">0.9</td>
-                            <td class="ex-3 toggleDisplay">0.9</td>
-                            <td class="ex-4 toggleDisplay">0.9</td>
-                            <td class="ex-5 toggleDisplay">0.9</td>
+                            <td class="ex-1 toggleDisplay in">0.10</td>
+                            <td class="ex-2 toggleDisplay">0.10</td>
+                            <td class="ex-3 toggleDisplay">0.10</td>
+                            <td class="ex-4 toggleDisplay">0.10</td>
+                            <td class="ex-5 toggleDisplay">0.10</td>
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:project_name">project_name</a></td>
@@ -926,6 +963,15 @@
                             <td class="ex-5 toggleDisplay">POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</td>
                         </tr>
                         <tr>
+                            <td><a href="#location">location.</a><a href="#location:location_attribute">location_attribute</a></td>
+                            <td><a href="#location:location_attribute">location_attribute</a></td>
+                            <td class="ex-1 toggleDisplay in">On Ground</td>
+                            <td class="ex-2 toggleDisplay">On Ground</td>
+                            <td class="ex-3 toggleDisplay">On Ground</td>
+                            <td class="ex-4 toggleDisplay">On Ground</td>
+                            <td class="ex-5 toggleDisplay"></td>
+                        </tr>
+                        <tr>
                             <td><a href="#person">person.</a><a href="#person:person_uuid">person_uuid</a></td>
                             <td><a href="#person:person_uuid">person_uuid</a></td>
                             <td class="ex-1 toggleDisplay in">e52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
@@ -998,6 +1044,15 @@
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
+                            <td><a href="#report">report.</a><a href="#report:data_standard_version">data_standard_version</a></td>
+                            <td><a href="#report:data_standard_version">data_standard_version</a></td>
+                            <td class="ex-1 toggleDisplay in">0.10</td>
+                            <td class="ex-2 toggleDisplay">0.10</td>
+                            <td class="ex-3 toggleDisplay">0.10</td>
+                            <td class="ex-4 toggleDisplay">0.10</td>
+                            <td class="ex-5 toggleDisplay">0.10</td>
+                        </tr>
+                        <tr>
                             <td><a href="#report">report.</a><a href="#report:report_uuid">report_uuid</a></td>
                             <td><a href="#report:report_uuid">report_uuid</a></td>
                             <td class="ex-1 toggleDisplay in">252e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
@@ -1041,6 +1096,24 @@
                             <td class="ex-3 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-4 toggleDisplay">a52e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-5 toggleDisplay">e52e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#location">location.</a><a href="#location:location_wkt">location_wkt</a></td>
+                            <td><a href="#location:location_wkt">location_wkt</a></td>
+                            <td class="ex-1 toggleDisplay in">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-2 toggleDisplay">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-3 toggleDisplay">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-4 toggleDisplay">POINT(-175.123456 35.123456)</td>
+                            <td class="ex-5 toggleDisplay">POLYGON(-109.0 -85.6, -109.0 -84.6, -110.0 -84.6, -109.0 -85.6)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#location">location.</a><a href="#location:location_attribute">location_attribute</a></td>
+                            <td><a href="#location:location_attribute">location_attribute</a></td>
+                            <td class="ex-1 toggleDisplay in">On Ground</td>
+                            <td class="ex-2 toggleDisplay">On Ground</td>
+                            <td class="ex-3 toggleDisplay">On Ground</td>
+                            <td class="ex-4 toggleDisplay">On Ground</td>
+                            <td class="ex-5 toggleDisplay"></td>
                         </tr>
                         <tr>
                             <td><a href="#report">report.</a><a href="#device">device.</a><a href="#device:device_uuid">device_uuid</a></td>
