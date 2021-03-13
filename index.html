@@ -108,7 +108,7 @@
                         <tbody>
                             <tr class="table-primary"><th colspan="2">device_status <span class="badge badge-primary float-right ml-1">Class</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td><a href="#device_status"># Go to definition.</a></td></tr>
-                            <tr><td style="width: 10%">Comments</td><td></td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Applicable when used inside <code>report</code> element.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td></td></tr>
                         </tbody>
                     </table>
@@ -118,7 +118,7 @@
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">device_count <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Number of distinct devices of <code>device_type</code> and <code>device_model</code> at the location used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverspecies_age.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Applicable when used inside <code>report</code> element. Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverspecies_age.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>5</code></td></tr>
                         </tbody>
                     </table>
@@ -412,7 +412,7 @@
                             <tr class="table-secondary"><th colspan="2">data_standard_version <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Version of the data standard.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Indicates to the consuming system what version of the standard the particular report adheres to.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>0.10</code></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>0.11</code></td></tr>
                         </tbody>
                     </table>
 
@@ -745,7 +745,7 @@
                             <tr class="table-secondary"><th colspan="2">data_standard_version <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-primary float-right">Mandatory</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Version of the data standard.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Indicates to the consuming system what version of the standard the dataset adheres to.</td></tr>
-                            <tr><td style="width: 10%">Examples</td><td><code>0.10</code></td></tr>
+                            <tr><td style="width: 10%">Examples</td><td><code>0.11</code></td></tr>
                         </tbody>
                     </table>
 
@@ -848,11 +848,11 @@
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:data_standard_version">data_standard_version</a></td>
                             <td><a href="#system:data_standard_version">data_standard_version</a></td>
-                            <td class="ex-1 toggleDisplay in">0.10</td>
-                            <td class="ex-2 toggleDisplay">0.10</td>
-                            <td class="ex-3 toggleDisplay">0.10</td>
-                            <td class="ex-4 toggleDisplay">0.10</td>
-                            <td class="ex-5 toggleDisplay">0.10</td>
+                            <td class="ex-1 toggleDisplay in">0.11</td>
+                            <td class="ex-2 toggleDisplay">0.11</td>
+                            <td class="ex-3 toggleDisplay">0.11</td>
+                            <td class="ex-4 toggleDisplay">0.11</td>
+                            <td class="ex-5 toggleDisplay">0.11</td>
                         </tr>
                         <tr>
                             <td><a href="#system">system.</a><a href="#system:project_name">project_name</a></td>
@@ -1046,11 +1046,11 @@
                         <tr>
                             <td><a href="#report">report.</a><a href="#report:data_standard_version">data_standard_version</a></td>
                             <td><a href="#report:data_standard_version">data_standard_version</a></td>
-                            <td class="ex-1 toggleDisplay in">0.10</td>
-                            <td class="ex-2 toggleDisplay">0.10</td>
-                            <td class="ex-3 toggleDisplay">0.10</td>
-                            <td class="ex-4 toggleDisplay">0.10</td>
-                            <td class="ex-5 toggleDisplay">0.10</td>
+                            <td class="ex-1 toggleDisplay in">0.11</td>
+                            <td class="ex-2 toggleDisplay">0.11</td>
+                            <td class="ex-3 toggleDisplay">0.11</td>
+                            <td class="ex-4 toggleDisplay">0.11</td>
+                            <td class="ex-5 toggleDisplay">0.11</td>
                         </tr>
                         <tr>
                             <td><a href="#report">report.</a><a href="#report:report_uuid">report_uuid</a></td>
@@ -1122,6 +1122,15 @@
                             <td class="ex-2 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
                             <td class="ex-3 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
                             <td class="ex-4 toggleDisplay">352e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                            <td class="ex-5 toggleDisplay">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#report">report.</a><a href="#device">device.</a><a href="#device:device_model_uuid">device_model_uuid</a></td>
+                            <td><a href="#device:device_model_uuid">device_model_uuid</a></td>
+                            <td class="ex-1 toggleDisplay in">452e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-2 toggleDisplay">452e11ac-b9fa-11e8-8d80-0220ed3bca7a</td>
+                            <td class="ex-3 toggleDisplay">452e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
+                            <td class="ex-4 toggleDisplay">452e11ac-b9fa-11e8-8d80-0220ed3bca7b</td>
                             <td class="ex-5 toggleDisplay">&nbsp;</td>
                         </tr>
                         <tr>
