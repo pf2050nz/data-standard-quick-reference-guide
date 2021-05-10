@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="shortcut icon" href=".\imspecies_ages\favicon.ico">
+        <link rel="shortcut icon" href=".\images\favicon.ico">
         <link rel="stylesheet" href="scss\custom.css">
 
         <title>New Zealand Predator Free 2050 Data Standard Quick Reference Guide</title>
@@ -54,10 +54,10 @@
                     <h1>Predator Control Data Standard Quick Reference Guide</h1>
 
                     <p>
-                        When New Zealand achieves Predator Free 2050, it will be due in no small part to thousands of dedicated volunteers and conservation staff who have logged endless hours trekking through unforgiving landscapes to check traps, creating and assessing predator manspecies_agement plans, and managing and analysing data to feed back into planning.<br/>
-                        Achieving Predator Free 2050 will also rely on making the best use of existing tools, and coming up with new tools and approaches. Underpinning both of these will be the effective manspecies_agement, sharing and analysis the vast and invaluable amount of predator control data that is already collected daily across New Zealand and is set to only increase.<br/>
-                        However, integrating such heterogeneous data, collected by multiple people from multiple devices in multiple locations, remains a challenge due to the significant variations that can occur in observational scales, collection protocols, and terminologies (König C., et al., 2019).<br/>
-                        To overcome data integration challenges around predator control data, a call for standards has emerged from those working at all levels, from communities up to species_agencies and government. Creating and implementing a ‘data standard’ has its challenges, but previous successes have shown that they can be overcome by recognising the issues around data manspecies_agement and having the motivation to address them in a collective manner.
+                        When New Zealand achieves Predator Free 2050, it will be due in no small part to thousands of dedicated volunteers and conservation staff who have logged endless hours trekking through unforgiving landscapes to check traps, creating and assessing predator management plans, and managing and analysing data to feed back into planning.<br/><br/>
+                        Achieving Predator Free 2050 will also rely on making the best use of existing tools, and coming up with new tools and approaches. Underpinning both of these will be the effective management, sharing and analysis the vast and invaluable amount of predator control data that is already collected daily across New Zealand and is set to only increase.<br/><br/>
+                        However, integrating such heterogeneous data, collected by multiple people from multiple devices in multiple locations, remains a challenge due to the significant variations that can occur in observational scales, collection protocols, and terminologies (König C., et al., 2019).<br/><br/>
+                        To overcome data integration challenges around predator control data, a call for standards has emerged from those working at all levels, from communities up to agencies and government. Creating and implementing a ‘data standard’ has its challenges, but previous successes have shown that they can be overcome by recognising the issues around data management and having the motivation to address them in a collective manner.
                     </p>
 
                     <hr/>
@@ -118,7 +118,7 @@
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">device_count <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
                             <tr><td style="width: 10%">Definition</td><td>Number of distinct devices of <code>device_type</code> and <code>device_model</code> at the location used to catch or detect predators.</td></tr>
-                            <tr><td style="width: 10%">Comments</td><td>Applicable when used inside <code>report</code> element. Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverspecies_age.</td></tr>
+                            <tr><td style="width: 10%">Comments</td><td>Applicable when used inside <code>report</code> element. Default and assumed value if <code>device_count</code> data is missing is 1.<br/>A <code>device_count</code> greater than 1 will indicate report data is aggregated and collected from multiple devices over a period of time and/or within an area of coverage.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>1</code>, <code>5</code></td></tr>
                         </tbody>
                     </table>
@@ -561,7 +561,7 @@
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr class="table-secondary"><th colspan="2">species_age <span class="badge badge-secondary float-right ml-1">Property</span><span class="badge badge-secondary float-right">Optional</span></th></tr>
-                            <tr><td style="width: 10%">Definition</td><td>Approximate species_age of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
+                            <tr><td style="width: 10%">Definition</td><td>Approximate age of the the animal detected or caught at a location, during, or prior to, an activity or event.</td></tr>
                             <tr><td style="width: 10%">Comments</td><td>Recommend <code>species_age</code> valid values are stored and published via cloud-based API.</td></tr>
                             <tr><td style="width: 10%">Examples</td><td><code>Unknown</code>, <code>Baby</code>, <code>Juvenile</code>, <code>Adult</code></td></tr>
                         </tbody>
